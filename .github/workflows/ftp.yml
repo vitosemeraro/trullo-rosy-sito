@@ -1,0 +1,46 @@
+name: Pubblica sito (FTP Netsons)
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: ftp
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - name: Build e controllo link
+        run: python build.py && python check_links.py
+      - name: Copia di sicurezza dei file che verranno sovrascritti
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_DIR: ${{ secrets.FTP_DIR }}
+        run: |
+          sudo apt-get install -y lftp >/dev/null
+          mkdir -p backup
+          lftp -u "$FTP_USER","$FTP_PASSWORD" "$FTP_HOST" -e "set ftp:ssl-force yes; cd ${FTP_DIR:-./}; lcd backup; mget .htaccess robots.txt sitemap.xml; bye" || true
+          ls -la backup
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backup-server-${{ github.run_number }}
+          path: backup
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Carica via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}
+          local-dir: ./dist/
+          protocol: ftps
