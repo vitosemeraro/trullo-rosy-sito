@@ -10,7 +10,10 @@ import os
 import shutil
 from datetime import date
 
+import re
+
 from content import C, DEFAULT, GALLERY_IMAGES, LANGS, PATHS, PLACES
+from guides import GUIDES
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
@@ -89,17 +92,18 @@ def place_name(lang, key, default):
 
 # ------------------------------------------------------------------ layout
 
-def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=False):
+def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=False, paths=None):
     t = C[lang]
-    url = SITE + PATHS[key][lang]
-    alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{SITE}{PATHS[key][l]}">' for l in LANGS)
-    alts += f'<link rel="alternate" hreflang="x-default" href="{SITE}{PATHS[key][DEFAULT]}">'
+    paths = paths or PATHS[key]
+    url = SITE + paths[lang]
+    alts = "".join(f'<link rel="alternate" hreflang="{l}" href="{SITE}{paths[l]}">' for l in LANGS if l in paths)
+    alts += f'<link rel="alternate" hreflang="x-default" href="{SITE}{paths.get(DEFAULT, paths[lang])}">'
     nav = "".join(
         f'<a href="{PATHS[k][lang]}"{" aria-current=\"page\"" if k == key else ""}>{e(label)}</a>'
         for k, label in zip(NAV_KEYS, t["nav"])
     )
     langs = "".join(
-        f'<a href="{PATHS[key][l]}" hreflang="{l}" lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{l.upper()}</a>'
+        f'<a href="{paths.get(l, PATHS["home"][l])}" hreflang="{l}" lang="{l}"{" aria-current=\"true\"" if l == lang else ""}>{l.upper()}</a>'
         for l in LANGS
     )
     ld = "".join(f'<script type="application/ld+json">{json.dumps(s, ensure_ascii=False)}</script>' for s in schemas)
@@ -209,6 +213,11 @@ def breadcrumb(lang, key):
 
 # ------------------------------------------------------------------ pagine
 
+def guide_links(lang):
+    items = "".join(f'<li>→ <a href="{g["paths"][lang]}">{e(g[lang]["h1"])}</a></li>' for g in GUIDES if lang in g["paths"])
+    return f'<ul class="guide-links">{items}</ul>' if items else ""
+
+
 def home(lang):
     t, p = C[lang], C[lang]["home"]
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in t["faq"])
@@ -253,6 +262,7 @@ def home(lang):
 <section class="wrap">
   <h2>{e(p['places_h2'])}</h2>
   <p>{e(p['places_p'])}</p>
+  {guide_links(lang)}
   <ul class="places">{places}</ul>
   <p><a class="more" href="{PATHS['dintorni'][lang]}">{e(p['more_places'])} →</a></p>
 </section>
@@ -342,6 +352,7 @@ def dintorni(lang):
   <h2>{e(p['table_h2'])}</h2>
   <table class="facts"><thead><tr><th scope="col">{e(p['th'][0])}</th><th scope="col">{e(p['th'][1])}</th></tr></thead><tbody>{rows}</tbody></table>
 </section>
+<section class="wrap">{guide_links(lang)}</section>
 <section class="wrap places-list">{items}</section>
 <section class="wrap final">
   <h2>{e(p['final_h2'])}</h2>
@@ -423,6 +434,68 @@ def redirect_page(target):
 """
 
 
+GUIDE_LABEL = {"it": "Guida", "en": "Guide"}
+
+
+def guide(g, lang):
+    t, p = C[lang], g[lang]
+    import json as _json
+    cred = {}
+    for folder in {m.split("/")[0] for m in re.findall(r"\{\{img:([^|}]+)", p["body"]) + [g["hero"]]}:
+        fp = os.path.join(ROOT, "static", "img", folder, "crediti.json")
+        if os.path.exists(fp):
+            for k, v in _json.load(open(fp, encoding="utf-8")).items():
+                cred[f"{folder}/{k}"] = v
+    used = [g["hero"]]
+
+    def fig(m):
+        name, alt = m.group(1), m.group(2)
+        used.append(name)
+        c = cred.get(name)
+        cap = f'<figcaption>{e(alt)}' + (f' · Foto: {e(c["autore"])}, {e(c["licenza"])}' if c else "") + "</figcaption>"
+        return f"<figure class=\"g-fig\">{img(name, alt)}{cap}</figure>"
+
+    body_html = re.sub(r"\{\{img:([^|}]+)\|([^}]+)\}\}", fig, p["body"])
+    srcs = "".join(f'<li><a href="{u}" rel="noopener" target="_blank">{e(n)}</a></li>' for n, u in g["sources"])
+    photos = "".join(
+        f'<li>{e(cred[n]["titolo"][5:])}: {e(cred[n]["autore"])}, <a href="{cred[n]["licenza_url"]}" rel="noopener license" target="_blank">{e(cred[n]["licenza"])}</a>, <a href="{cred[n]["pagina"]}" rel="noopener" target="_blank">Wikimedia Commons</a></li>'
+        for n in dict.fromkeys(used) if n in cred
+    )
+    hero_c = cred.get(g["hero"])
+    url = SITE + g["paths"][lang]
+    art = {"@context": "https://schema.org", "@type": "Article", "headline": p["h1"], "description": p["desc"],
+           "datePublished": g["date"], "dateModified": g["date"], "inLanguage": lang, "mainEntityOfPage": url,
+           "image": f"{SITE}/img/{g['hero']}.webp", "author": {"@type": "Organization", "name": "Trullo Rosy", "url": SITE},
+           "publisher": {"@type": "Organization", "name": "Trullo Rosy", "logo": f"{SITE}/img/logo.png"}}
+    faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faq"]]}
+    bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": t["nav"][0], "item": SITE + PATHS["home"][lang]},
+        {"@type": "ListItem", "position": 2, "name": p["h1"], "item": url}]}
+    body = f"""
+<section class="hero hero-guide">
+  {img(g['hero'], p['h1'], 'hero-img', lazy=False)}
+  <div class="hero-text wrap">
+    <p class="kicker">{GUIDE_LABEL.get(lang, '')} · {e(p['updated'])}</p>
+    <h1>{e(p['h1'])}</h1>
+  </div>
+</section>
+<article class="wrap guide">
+  <p class="answer-box">{e(p['answer'])}</p>
+  {body_html}
+  <section class="final">
+    <h2>{e(p['cta_h2'])}</h2>
+    {book_buttons(t)}
+  </section>
+  <h2>{e(p['sources_h2'])}</h2>
+  <ul class="small">{srcs}</ul>
+  <h2>{e(p['photos_h2'])}</h2>
+  <ul class="small">{photos}</ul>
+</article>
+"""
+    return page(lang, "home", p["title"], p["desc"], body, [art, faq, bc], og_image=g["hero"], paths=g["paths"])
+
+
 BUILDERS = {"home": home, "trullo": trullo, "galleria": galleria, "dintorni": dintorni, "contatti": contatti, "privacy": privacy}
 
 
@@ -444,6 +517,11 @@ def sitemap():
         alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{SITE}{langs[DEFAULT]}"/>'
         for l in LANGS:
             out.append(f"<url><loc>{SITE}{langs[l]}</loc><lastmod>{TODAY}</lastmod>{alts}</url>")
+    for g in GUIDES:
+        ps = g["paths"]
+        alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{SITE}{p}"/>' for l, p in ps.items())
+        for l, p in ps.items():
+            out.append(f"<url><loc>{SITE}{p}</loc><lastmod>{g['date']}</lastmod>{alts}</url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(out) + "\n</urlset>\n")
@@ -463,6 +541,11 @@ def llms():
         for k, label in zip(NAV_KEYS, t["nav"]):
             lines.append(f"- [{label}]({SITE}{PATHS[k][l]})")
         lines.append("")
+    lines.append("## Guide / Guides")
+    for g in GUIDES:
+        for l, p in g["paths"].items():
+            lines.append(f"- [{g[l]['h1']}]({SITE}{p})")
+    lines.append("")
     lines += ["## Prenotazioni / Booking", f"- Airbnb: {AIRBNB}", f"- Booking.com: {BOOKING}", f"- WhatsApp: {WHATSAPP}", ""]
     return "\n".join(lines)
 
@@ -475,6 +558,9 @@ def main():
     for key, fn in BUILDERS.items():
         for lang in LANGS:
             write(PATHS[key][lang], fn(lang))
+    for g in GUIDES:
+        for lang, path in g["paths"].items():
+            write(path, guide(g, lang))
     for old, new in REDIRECTS.items():
         write(old, redirect_page(new))
     write("/404.html", not_found())

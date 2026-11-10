@@ -1,61 +1,5 @@
 {
- "locorotondo-con-il-drone": {
-  "titolo": "File:Locorotondo con il drone.jpg",
-  "descrizione": "Locorotondo con il drone",
-  "autore": "ParisTaras",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_con_il_drone.jpg"
- },
- "locorotondo-stazione": {
-  "titolo": "File:Locorotondo - Stazione.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - The train station at sunset",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Stazione.jpg"
- },
- "locorotondo-via-giannone": {
-  "titolo": "File:Locorotondo - Via Giannone.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Via Giannone, a street in the historic center",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Via_Giannone.jpg"
- },
- "locorotondo-via-morelli": {
-  "titolo": "File:Locorotondo - Via Morelli.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Via Morelli, a street in the historic center",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Via_Morelli.jpg"
- },
- "locorotondo-banner": {
-  "titolo": "File:Locorotondo banner.jpg",
-  "descrizione": "This image has been extracted from another file",
-  "autore": "Davide Mauro",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_banner.jpg"
- },
- "photo-view-of-locorotondo-1930-touring-club-italiano-s06012-": {
-  "titolo": "File:Photo View of Locorotondo 1930 - Touring Club Italiano s06012-01.jpg",
-  "descrizione": "View of Locorotondo.",
-  "autore": "Unknown authorUnknown author",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Photo_View_of_Locorotondo_1930_-_Touring_Club_Italiano_s06012-01.jpg"
- },
- "locorotondo-madonna-della-greca-2": {
-  "titolo": "File:Locorotondo - Madonna della Greca - 2.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Church of Madonna della Greca - Rose window",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Madonna_della_Greca_-_2.jpg"
- },
- "locorotondo-panorama": {
+ "panorama": {
   "titolo": "File:Locorotondo-panorama.jpg",
   "descrizione": "Locorotondo",
   "autore": "Cinzia astorino",
@@ -63,207 +7,7 @@
   "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo-panorama.jpg"
  },
- "locorotondo-al-tramonto": {
-  "titolo": "File:Locorotondo al tramonto.jpg",
-  "descrizione": "Locorotondo",
-  "autore": "Frankthroughtheglass",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_al_tramonto.jpg"
- },
- "locorotondo-con-installazione-di-centrini-firmamento": {
-  "titolo": "File:Locorotondo con installazione di centrini Firmamento.jpg",
-  "descrizione": "Locorotondo",
-  "autore": "Frankthroughtheglass",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_con_installazione_di_centrini_Firmamento.jpg"
- },
- "locorotondo-view-from-villa-comunale-1": {
-  "titolo": "File:Locorotondo - View from Villa Comunale - 1.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - View from the public garden (Villa Comunale) towards Martina Franca",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_View_from_Villa_Comunale_-_1.jpg"
- },
- "locorotondo-view-from-via-serra": {
-  "titolo": "File:Locorotondo - View from Via Serra.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - View of the historic center from Via Serra",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_View_from_Via_Serra.jpg"
- },
- "locorotondo-san-giorgio-martire-2": {
-  "titolo": "File:Locorotondo - San Giorgio Martire - 2.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Church of Saint George the Martyr - Statue of saint Peter on the façade",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_San_Giorgio_Martire_-_2.jpg"
- },
- "locorotondo-madonna-della-greca-1": {
-  "titolo": "File:Locorotondo - Madonna della Greca - 1.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Church of Madonna della Greca - Detail of the pediment",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Madonna_della_Greca_-_1.jpg"
- },
- "locorotondo-view-of-villa-comunale": {
-  "titolo": "File:Locorotondo - View of Villa Comunale.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - View of the terraces of Villa Comunale (public garden) from Via Serra",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_View_of_Villa_Comunale.jpg"
- },
- "46-vinyes-de-locorotondo-i-la-vall-d-itria-des-de-via-nardel": {
-  "titolo": "File:46 Vinyes de Locorotondo i la vall d'Itria, des de Via Nardelli.jpg",
-  "descrizione": "Locorotondo",
-  "autore": "Enric",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:46_Vinyes_de_Locorotondo_i_la_vall_d%27Itria,_des_de_Via_Nardelli.jpg"
- },
- "49-la-vall-d-itria-des-de-via-nardelli-locorotondo-al-fons-m": {
-  "titolo": "File:49 La vall d'Itria des de Via Nardelli (Locorotondo), al fons Martina Franca.jpg",
-  "descrizione": "Locorotondo",
-  "autore": "Enric",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:49_La_vall_d%27Itria_des_de_Via_Nardelli_(Locorotondo),_al_fons_Martina_Franca.jpg"
- },
- "locorotondo": {
-  "titolo": "File:Locorotondo.jpg",
-  "descrizione": "Veduta notturna del borgo di Locorotondo",
-  "autore": "Manidifoto",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo.jpg"
- },
- "locorotondo-piazza-fra-giuseppe-andrea-rodio": {
-  "titolo": "File:Locorotondo - Piazza Fra Giuseppe Andrea Rodio.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Frieze on a house at the Nort end of Fra Giuseppe Andrea Rodio square",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Piazza_Fra_Giuseppe_Andrea_Rodio.jpg"
- },
- "panorama-locorotondo": {
-  "titolo": "File:Panorama Locorotondo.jpg",
-  "descrizione": "Panorama del bellissimo centro storico, nel cuore della Valle d'Itria",
-  "autore": "Costantino Cafaro",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Panorama_Locorotondo.jpg"
- },
- "veduta-notturna-di-locorotondo": {
-  "titolo": "File:Veduta notturna di Locorotondo.jpg",
-  "descrizione": "Veduta notturna di Locorotondo",
-  "autore": "Manidifoto",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Veduta_notturna_di_Locorotondo.jpg"
- },
- "locorotondo-san-nicola-di-myra-1": {
-  "titolo": "File:Locorotondo - San Nicola di Myra - 1.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Church of Saint Nicolas of Myra - Interior",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_San_Nicola_di_Myra_-_1.jpg"
- },
- "locorotondo-san-nicola-di-myra-2": {
-  "titolo": "File:Locorotondo - San Nicola di Myra - 2.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Church of Saint Nicolas of Myra - Frescoes of the dome",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_San_Nicola_di_Myra_-_2.jpg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-01-18-53-34-001": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-01 18-53-34 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "M0m492",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-01_18-53-34_001.jpeg"
- },
- "dome-of-church-of-st-george-in-locorotondo": {
-  "titolo": "File:Dome of Church of St. george in Locorotondo.jpg",
-  "descrizione": "Dome of Church of St. George in Locorotondo",
-  "autore": "Livioandronico2013",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Dome_of_Church_of_St._george_in_Locorotondo.jpg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-21-17-46-07-001": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-21 17-46-07 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "Madi.c.ph",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-21_17-46-07_001.jpeg"
- },
- "church-of-st-george-in-locorotondo-2015": {
-  "titolo": "File:Church of St. George in Locorotondo 2015.jpg",
-  "descrizione": "Church of St. George in Locorotondo 2015",
-  "autore": "Livioandronico2013",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Church_of_St._George_in_Locorotondo_2015.jpg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-21-17-45-39-001": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-21 17-45-39 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "Madi.c.ph",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-21_17-45-39_001.jpeg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-21-17-47-02-001": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-21 17-47-02 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "Madi.c.ph",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-21_17-47-02_001.jpeg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-21-17-45-01-001": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-21 17-45-01 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "Madi.c.ph",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-21_17-45-01_001.jpeg"
- },
- "locorotondo-locorotondo-2024-09-26-12-56-43-002": {
-  "titolo": "File:Locorotondo - Locorotondo - 2024-09-26 12-56-43 002.jpg",
-  "descrizione": "Locorotondo",
-  "autore": "Pakycassano",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Locorotondo_-_2024-09-26_12-56-43_002.jpg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-21-17-47-49-001": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-21 17-47-49 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "Madi.c.ph",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-21_17-47-49_001.jpeg"
- },
- "locorotondo-locorotondo-2024-09-02-22-38-08-001": {
-  "titolo": "File:Locorotondo - Locorotondo - 2024-09-02 22-38-08 001.jpeg",
-  "descrizione": "Locorotondo",
-  "autore": "M0m492",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Locorotondo_-_2024-09-02_22-38-08_001.jpeg"
- },
- "locorotondo-comune-di-locorotondo-2024-09-01-18-53-34-003": {
+ "vicolo-sera": {
   "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-01 18-53-34 003.jpeg",
   "descrizione": "Locorotondo",
   "autore": "M0m492",
@@ -271,31 +15,39 @@
   "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-01_18-53-34_003.jpeg"
  },
- "locorotondo-vista-da-cisternino": {
-  "titolo": "File:Locorotondo vista da Cisternino.JPG",
-  "descrizione": "Locorotondo",
-  "autore": "Mfran22",
+ "via-morelli": {
+  "titolo": "File:Locorotondo - Via Morelli.jpg",
+  "descrizione": "Locorotondo (Apulia, Italy) - Via Morelli, a street in the historic center",
+  "autore": "Benjamin Smith",
   "licenza": "CC BY-SA 4.0",
   "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_vista_da_Cisternino.JPG"
+  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Via_Morelli.jpg"
  },
- "locorotondo-comune-di-locorotondo-2024-09-01-18-53-34-002": {
-  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-01 18-53-34 002.jpeg",
+ "notte": {
+  "titolo": "File:Locorotondo.jpg",
+  "descrizione": "Veduta notturna del borgo di Locorotondo",
+  "autore": "Manidifoto",
+  "licenza": "CC BY-SA 4.0",
+  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo.jpg"
+ },
+ "san-giorgio": {
+  "titolo": "File:Church of St. George in Locorotondo 2015.jpg",
+  "descrizione": "Church of St. George in Locorotondo 2015",
+  "autore": "Livioandronico2013",
+  "licenza": "CC BY-SA 4.0",
+  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Church_of_St._George_in_Locorotondo_2015.jpg"
+ },
+ "vicolo-luci": {
+  "titolo": "File:Locorotondo - Comune di Locorotondo - 2024-09-01 18-53-34 001.jpeg",
   "descrizione": "Locorotondo",
   "autore": "M0m492",
   "licenza": "CC BY-SA 4.0",
   "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-01_18-53-34_002.jpeg"
+  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Comune_di_Locorotondo_-_2024-09-01_18-53-34_001.jpeg"
  },
- "locorotondo-san-nicola-di-myra-3": {
-  "titolo": "File:Locorotondo - San Nicola di Myra - 3.jpg",
-  "descrizione": "Locorotondo (Apulia, Italy) - Church of Saint Nicolas of Myra - 17th-century fresco on the ceiling, depicting musician angels",
-  "autore": "Benjamin Smith",
-  "licenza": "CC BY-SA 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_San_Nicola_di_Myra_-_3.jpg"
- },
- "locorotondo-view-from-villa-comunale-2": {
+ "trulli-campagna": {
   "titolo": "File:Locorotondo - View from Villa Comunale - 2.jpg",
   "descrizione": "Locorotondo (Apulia, Italy) - View of two sets of trulli in the countryside from the public garden (Villa Comunale)",
   "autore": "Benjamin Smith",
@@ -303,12 +55,12 @@
   "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_View_from_Villa_Comunale_-_2.jpg"
  },
- "dsc00488-panorama-locorotondo": {
-  "titolo": "File:DSC00488 Panorama Locorotondo.jpg",
-  "descrizione": "DSC00488 Panorama Locorotondo",
-  "autore": "FalantoTaras",
-  "licenza": "CC BY 4.0",
-  "licenza_url": "https://creativecommons.org/licenses/by/4.0",
-  "pagina": "https://commons.wikimedia.org/wiki/File:DSC00488_Panorama_Locorotondo.jpg"
+ "tramonto": {
+  "titolo": "File:Locorotondo - Locorotondo - 2024-09-26 12-56-43 002.jpg",
+  "descrizione": "Locorotondo",
+  "autore": "Pakycassano",
+  "licenza": "CC BY-SA 4.0",
+  "licenza_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "pagina": "https://commons.wikimedia.org/wiki/File:Locorotondo_-_Locorotondo_-_2024-09-26_12-56-43_002.jpg"
  }
 }
