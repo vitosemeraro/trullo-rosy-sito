@@ -1,7 +1,6 @@
-name: Pubblica sito (FTP Netsons)
+name: Pubblica sito (FTP Netsons, solo a mano)
+# Dal 12/11/2026 il dominio punta a GitHub Pages: l'FTP resta solo come copia manuale finché Netsons è attivo.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 concurrency:
   group: ftp
