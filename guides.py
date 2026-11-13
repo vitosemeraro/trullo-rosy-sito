@@ -44,7 +44,7 @@ GUIDES = [
 
 <h2>Perché andare a Locorotondo per l'Immacolata?</h2>
 <p>L'8 dicembre e il ponte che lo accompagna sono il momento in cui le luminarie sono già tutte accese e i mercatini sono aperti. Il centro storico è piccolo e si gira a piedi: al tramonto, quando le luci si accendono sulle facciate bianche, è il momento più bello per una passeggiata.</p>
-<p>Il resto della Valle d'Itria fa festa nello stesso periodo: Martina Franca, Alberobello e Cisternino sono vicini, e in una giornata se ne possono vedere due.</p>
+<p>Il resto della Valle d'Itria fa festa nello stesso periodo: Martina Franca, Alberobello e Cisternino sono vicini, e in una giornata se ne possono vedere due. Date e luoghi paese per paese sono nella guida <a href="/guide/mercatini-di-natale-in-puglia/">Mercatini di Natale in Puglia</a>.</p>
 
 <h2>Dove sono le luci nel centro storico?</h2>
 <p>Nel 2025 il percorso delle luminarie partiva da <strong>piazza Aldo Moro</strong> e attraversava <strong>via Porta Nuova, via Morelli, via Montanaro, via Bruno e via Eroi Dogali</strong>, con le luci accese ogni sera dalle 17 circa. Il percorso del 2026 non è ancora stato annunciato.</p>
@@ -102,7 +102,7 @@ GUIDES = [
 
 <h2>Why visit Locorotondo on 8 December?</h2>
 <p>The Immaculate Conception holiday on 8 December is when the lights are all on and the Christmas markets are open. The old town is small and easy to walk: at sunset, when the lights come on against the white façades, it is at its most beautiful.</p>
-<p>The rest of the Itria Valley celebrates at the same time: Martina Franca, Alberobello and Cisternino are close by, and you can see two of them in a day.</p>
+<p>The rest of the Itria Valley celebrates at the same time: Martina Franca, Alberobello and Cisternino are close by, and you can see two of them in a day. Dates and places town by town are in our guide <a href="/en/guides/christmas-markets-in-puglia/">Christmas markets in Puglia</a>.</p>
 
 <h2>Where are the lights in the old town?</h2>
 <p>In 2025 the lights started from <strong>Piazza Aldo Moro</strong> and ran along <strong>Via Porta Nuova, Via Morelli, Via Montanaro, Via Bruno and Via Eroi Dogali</strong>, lit every evening from about 5 pm. The 2026 route has not been announced yet.</p>
@@ -370,6 +370,141 @@ GUIDES = [
             sources_h2="Fuentes",
             photos_h2="Fotos",
             updated="Actualizado el 13 de noviembre de 2026",
+        ),
+    },
+    {
+        "key": "mercatini-natale-puglia",
+        "date": "2026-11-13",
+        "modified": "2026-11-13",
+        "hero": "luoghi/valle-ditria",
+        "paths": {"it": "/guide/mercatini-di-natale-in-puglia/", "en": "/en/guides/christmas-markets-in-puglia/"},
+        "sources": [
+            ("Comune di Locorotondo, avviso \"Natale a Locorotondo 2026\" (7 settembre 2026)",
+             "https://www.comune.locorotondo.ba.it/it/news/natale-a-locorotondo-2026-avviso-pubblico-per-la-presentazione-di-proposte-progettuali"),
+            ("HelloApulia, \"Mercatini e luci di Natale in Valle d'Itria\" (programma 2025, 26 novembre 2025)",
+             "https://www.helloapulia.com/it/blog/mercatini-luci-natale-valle-ditria"),
+            ("Salento Prime, \"Mercatini di Natale in Puglia e Salento 2026/2027\" (aggiornato il 3 novembre 2026)",
+             "https://salentoprime.com/mercatini-di-natale-puglia-salento/"),
+        ],
+        "it": dict(
+            title="Mercatini di Natale in Puglia 2026: Valle d'Itria",
+            desc="Mercatini di Natale in Puglia nella Valle d'Itria: Locorotondo, Alberobello, Martina Franca, Cisternino e Ostuni, con le date 2025 e cosa si sa del 2026.",
+            h1="Mercatini di Natale in Puglia: la Valle d'Itria paese per paese",
+            answer="I mercatini di Natale più vicini tra loro in Puglia sono nella Valle d'Itria: Locorotondo, Alberobello, Martina Franca, Cisternino e Ostuni. Nel 2025 sono stati aperti da fine novembre o inizio dicembre fino al 6 gennaio. Per il 2026 il solo periodo indicato da un Comune è quello di Locorotondo, dal 22 novembre 2026 al 6 gennaio 2027.",
+            body="""
+<h2>Quali sono i mercatini di Natale della Valle d'Itria?</h2>
+<p>La Valle d'Itria è la zona dei trulli tra le province di Bari, Taranto e Brindisi. A dicembre quasi ogni paese ha luminarie, mercatini o un villaggio di Natale, e le distanze sono brevi: in una giornata se ne vedono due. Qui sotto trovi cosa c'era nel 2025 e cosa si sa ad oggi (13 novembre 2026) dell'edizione 2026.</p>
+<table class="facts">
+<thead><tr><th scope="col">Paese</th><th scope="col">Cosa c'è</th><th scope="col">Edizione 2025</th><th scope="col">2026</th></tr></thead>
+<tbody>
+<tr><th scope="row">Locorotondo</th><td>Luminarie e mercatini nel centro storico</td><td>mercatini dal 30 novembre 2025 al 6 gennaio 2026</td><td>periodo indicato dal Comune: 22 novembre 2026 – 6 gennaio 2027</td></tr>
+<tr><th scope="row">Alberobello</th><td>Luci tra i trulli e Villaggio di Natale in piazza del Popolo</td><td>villaggio dal 6 dicembre 2025 al 6 gennaio 2026</td><td>da confermare</td></tr>
+<tr><th scope="row">Martina Franca</th><td>Villaggio di Babbo Natale e giardino di luci in villa comunale</td><td>luci in villa comunale dal 13 dicembre 2025</td><td>da confermare</td></tr>
+<tr><th scope="row">Cisternino</th><td>Presepe vivente nel centro storico</td><td>28 dicembre 2025, 4 e 6 gennaio 2026</td><td>da confermare</td></tr>
+<tr><th scope="row">Ostuni</th><td>Mercatino "Zucchero e Cannella"</td><td>dal 6 all'8 dicembre 2025</td><td>programma non ancora pubblicato</td></tr>
+</tbody>
+</table>
+{{img:panorama-valle-itria|Panorama della Valle d'Itria}}
+
+<h2>Cosa c'è a Locorotondo a Natale?</h2>
+<p>Locorotondo è il paese più noto per le luci: nel 2025 i mercatini sono stati aperti <strong>dal 30 novembre 2025 al 6 gennaio 2026</strong> in piazza Aldo Moro, nella villa comunale e nelle vie vicino al Municipio. Per il 2026 il Comune ha indicato le iniziative <strong>dal 22 novembre 2026 al 6 gennaio 2027</strong>, con le luci a tema Pinocchio. Date, orari e percorso sono nella nostra guida dedicata: <a href="/guide/natale-a-locorotondo/">Natale a Locorotondo</a>.</p>
+
+<h2>Com'è il Natale ad Alberobello?</h2>
+<p>Nel 2025 le luminarie hanno illuminato il Rione Monti e l'Aia Piccola <strong>dal 5 dicembre 2025 al 5 gennaio 2026</strong>, e in piazza del Popolo c'era il Villaggio Enogastronomico di Natale tra i Trulli <strong>dal 6 dicembre 2025 al 6 gennaio 2026</strong>, con la casa di Babbo Natale e la pista di ghiaccio. Il presepe vivente si è tenuto dal 26 al 29 dicembre 2025. Il programma 2026 non è ancora uscito.</p>
+{{img:luoghi/alberobello|I trulli di Alberobello}}
+
+<h2>Cosa si trova a Martina Franca?</h2>
+<p>Martina Franca, il paese di Trullo Rosy, ha nel centro storico barocco il Villaggio di Babbo Natale. Nel 2025 la villa comunale è diventata un giardino di luci ("Lumière") <strong>dal 13 dicembre 2025</strong> per tutte le feste. Le date 2026 sono da confermare.</p>
+{{img:luoghi/martina-franca|Il centro storico di Martina Franca}}
+
+<h2>E Cisternino e Ostuni?</h2>
+<p>A Cisternino il Natale si vive soprattutto con il <strong>presepe vivente</strong> nei vicoli del centro storico: nel 2025 le serate sono state il 28 dicembre e il 4 e 6 gennaio. A Ostuni il mercatino "Zucchero e Cannella" si è tenuto <strong>dal 6 all'8 dicembre 2025</strong> tra viale Pola e piazza Italia. Per entrambi il programma 2026 non è ancora pubblico.</p>
+{{img:luoghi/ostuni|La città bianca di Ostuni}}
+
+<h2>Come organizzare un weekend di mercatini?</h2>
+<ul>
+<li><strong>Quando:</strong> il ponte dell'Immacolata (8 dicembre) e i giorni tra Natale e l'Epifania sono i momenti in cui è aperto quasi tutto. I weekend sono affollati: se puoi, scegli un giorno feriale.</li>
+<li><strong>Un giro possibile:</strong> mattina a Martina Franca, pomeriggio ad Alberobello, sera a Locorotondo con le luci accese.</li>
+<li><strong>Abbigliamento:</strong> la sera in collina fa freddo e le strade dei centri storici sono in pietra.</li>
+<li><strong>Dove dormire:</strong> un trullo in campagna come <a href="/il-trullo/">Trullo Rosy</a>, tra Martina Franca e Locorotondo, è comodo per tutti i paesi della valle. Altri luoghi da vedere sono nella pagina <a href="/dintorni/">Dintorni</a>.</li>
+</ul>
+
+<h2>Domande frequenti</h2>
+<details><summary>Quando aprono i mercatini di Natale in Puglia nel 2026?</summary><p>Ad oggi solo Locorotondo ha un periodo indicato dal Comune: dal 22 novembre 2026 al 6 gennaio 2027. Negli altri paesi della Valle d'Itria, nel 2025 i mercatini sono partiti tra fine novembre e inizio dicembre.</p></details>
+<details><summary>Qual è il mercatino di Natale più bello della Valle d'Itria?</summary><p>Locorotondo è il più conosciuto per le luminarie nel centro storico bianco; Alberobello ha il villaggio di Natale tra i trulli in piazza del Popolo.</p></details>
+<details><summary>Si possono vedere più mercatini in un giorno?</summary><p>Sì: Martina Franca, Locorotondo e Alberobello sono vicini e si visitano bene nella stessa giornata, lasciando Locorotondo per la sera.</p></details>
+<details><summary>Dove dormire per i mercatini della Valle d'Itria?</summary><p>Nella campagna tra Martina Franca e Locorotondo, per esempio a Trullo Rosy: un trullo intero con tre camere, camino e parcheggio, fino a 6 ospiti.</p></details>
+""",
+            faq=[
+                ("Quando aprono i mercatini di Natale in Puglia nel 2026?", "Ad oggi solo Locorotondo ha un periodo indicato dal Comune: dal 22 novembre 2026 al 6 gennaio 2027. Negli altri paesi della Valle d'Itria, nel 2025 i mercatini sono partiti tra fine novembre e inizio dicembre."),
+                ("Qual è il mercatino di Natale più bello della Valle d'Itria?", "Locorotondo è il più conosciuto per le luminarie nel centro storico bianco; Alberobello ha il villaggio di Natale tra i trulli in piazza del Popolo."),
+                ("Si possono vedere più mercatini in un giorno?", "Sì: Martina Franca, Locorotondo e Alberobello sono vicini e si visitano bene nella stessa giornata, lasciando Locorotondo per la sera."),
+                ("Dove dormire per i mercatini della Valle d'Itria?", "Nella campagna tra Martina Franca e Locorotondo, per esempio a Trullo Rosy: un trullo intero con tre camere, camino e parcheggio, fino a 6 ospiti."),
+            ],
+            cta_h2="Dormi in un trullo tra i mercatini della Valle d'Itria",
+            sources_h2="Fonti",
+            photos_h2="Foto",
+            updated="Aggiornato il 13 novembre 2026",
+        ),
+        "en": dict(
+            title="Christmas markets in Puglia 2026: Itria Valley",
+            desc="Christmas markets in Puglia's Itria Valley: Locorotondo, Alberobello, Martina Franca, Cisternino and Ostuni, with 2025 dates and what is known for 2026.",
+            h1="Christmas markets in Puglia: the Itria Valley town by town",
+            answer="Puglia's most compact cluster of Christmas markets is in the Itria Valley: Locorotondo, Alberobello, Martina Franca, Cisternino and Ostuni are only a few kilometres apart. In 2025 they ran from late November or early December until 6 January. For 2026 the only dates set by a town council so far are Locorotondo's, from 22 November 2026 to 6 January 2027.",
+            body="""
+<h2>Which Christmas markets are in the Itria Valley?</h2>
+<p>The Itria Valley is trulli country, where the provinces of Bari, Taranto and Brindisi meet. In December almost every town has lights, markets or a Christmas village, and distances are short: you can see two in a day. Below is what ran in 2025 and what is known so far (13 November 2026) about 2026.</p>
+<table class="facts">
+<thead><tr><th scope="col">Town</th><th scope="col">What's on</th><th scope="col">2025 edition</th><th scope="col">2026</th></tr></thead>
+<tbody>
+<tr><th scope="row">Locorotondo</th><td>Lights and markets in the old town</td><td>markets 30 November 2025 – 6 January 2026</td><td>period set by the council: 22 November 2026 – 6 January 2027</td></tr>
+<tr><th scope="row">Alberobello</th><td>Lights among the trulli and Christmas village in Piazza del Popolo</td><td>village 6 December 2025 – 6 January 2026</td><td>to be confirmed</td></tr>
+<tr><th scope="row">Martina Franca</th><td>Santa's village and garden of lights in the public garden</td><td>lights in the public garden from 13 December 2025</td><td>to be confirmed</td></tr>
+<tr><th scope="row">Cisternino</th><td>Living nativity in the old town</td><td>28 December 2025, 4 and 6 January 2026</td><td>to be confirmed</td></tr>
+<tr><th scope="row">Ostuni</th><td>"Zucchero e Cannella" market</td><td>6–8 December 2025</td><td>programme not yet published</td></tr>
+</tbody>
+</table>
+{{img:panorama-valle-itria|View over the Itria Valley}}
+
+<h2>What's on in Locorotondo at Christmas?</h2>
+<p>Locorotondo is the best-known town for its lights. In 2025 the markets ran <strong>from 30 November 2025 to 6 January 2026</strong> in Piazza Aldo Moro, the public garden and the streets near the town hall. For 2026 the council has planned events <strong>from 22 November 2026 to 6 January 2027</strong>, with Pinocchio-themed lights. Dates, times and the route are in our dedicated guide: <a href="/en/guides/christmas-in-locorotondo/">Christmas in Locorotondo</a>.</p>
+
+<h2>What is Christmas like in Alberobello?</h2>
+<p>In 2025 the lights covered the Rione Monti and Aia Piccola districts <strong>from 5 December 2025 to 5 January 2026</strong>, and Piazza del Popolo hosted a Christmas food village among the trulli <strong>from 6 December 2025 to 6 January 2026</strong>, with Santa's house and an ice rink. The living nativity ran from 26 to 29 December 2025. The 2026 programme has not been published yet.</p>
+{{img:luoghi/alberobello|The trulli of Alberobello}}
+
+<h2>What is there in Martina Franca?</h2>
+<p>Martina Franca, Trullo Rosy's home town, has a Santa's village in its baroque old town. In 2025 the public garden became a garden of lights ("Lumière") <strong>from 13 December 2025</strong> through the holidays. The 2026 dates are to be confirmed.</p>
+{{img:luoghi/martina-franca|The old town of Martina Franca}}
+
+<h2>What about Cisternino and Ostuni?</h2>
+<p>In Cisternino, Christmas is mostly about the <strong>living nativity</strong> in the lanes of the old town: in 2025 it ran on 28 December and 4 and 6 January. In Ostuni the "Zucchero e Cannella" market was held <strong>from 6 to 8 December 2025</strong> along Viale Pola and Piazza Italia. Neither has published its 2026 programme yet.</p>
+{{img:luoghi/ostuni|Ostuni, the white town}}
+
+<h2>How to plan a Christmas market weekend?</h2>
+<ul>
+<li><strong>When:</strong> the 8 December holiday weekend and the days between Christmas and Epiphany are when almost everything is open. Weekends are busy: pick a weekday if you can.</li>
+<li><strong>A possible route:</strong> morning in Martina Franca, afternoon in Alberobello, evening in Locorotondo with the lights on.</li>
+<li><strong>What to wear:</strong> evenings on the hills are cold and old town streets are stone.</li>
+<li><strong>Where to stay:</strong> a countryside trullo such as <a href="/en/the-trullo/">Trullo Rosy</a>, between Martina Franca and Locorotondo, is handy for every town in the valley. More places to visit are on our <a href="/en/surroundings/">Surroundings</a> page.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<details><summary>When do the Christmas markets in Puglia open in 2026?</summary><p>So far only Locorotondo has a period set by its council: 22 November 2026 to 6 January 2027. In the other Itria Valley towns, the 2025 markets started between late November and early December.</p></details>
+<details><summary>Which is the best Christmas market in the Itria Valley?</summary><p>Locorotondo is the best known for the lights in its white old town; Alberobello has a Christmas village among the trulli in Piazza del Popolo.</p></details>
+<details><summary>Can you see several markets in one day?</summary><p>Yes: Martina Franca, Locorotondo and Alberobello are close together and easy to visit in one day, leaving Locorotondo for the evening.</p></details>
+<details><summary>Where to stay for the Itria Valley Christmas markets?</summary><p>In the countryside between Martina Franca and Locorotondo, for example at Trullo Rosy: an entire trullo with three bedrooms, a fireplace and parking, for up to 6 guests.</p></details>
+""",
+            faq=[
+                ("When do the Christmas markets in Puglia open in 2026?", "So far only Locorotondo has a period set by its council: 22 November 2026 to 6 January 2027. In the other Itria Valley towns, the 2025 markets started between late November and early December."),
+                ("Which is the best Christmas market in the Itria Valley?", "Locorotondo is the best known for the lights in its white old town; Alberobello has a Christmas village among the trulli in Piazza del Popolo."),
+                ("Can you see several markets in one day?", "Yes: Martina Franca, Locorotondo and Alberobello are close together and easy to visit in one day, leaving Locorotondo for the evening."),
+                ("Where to stay for the Itria Valley Christmas markets?", "In the countryside between Martina Franca and Locorotondo, for example at Trullo Rosy: an entire trullo with three bedrooms, a fireplace and parking, for up to 6 guests."),
+            ],
+            cta_h2="Stay in a trullo among the Itria Valley markets",
+            sources_h2="Sources",
+            photos_h2="Photos",
+            updated="Updated 13 November 2026",
         ),
     },
 ]
