@@ -14,6 +14,9 @@ import re
 
 from content import C, DEFAULT, GALLERY_IMAGES, LANGS, PATHS, PLACES
 from guides import GUIDES
+from guides_valle import GUIDES as GUIDES_VALLE
+
+GUIDES = GUIDES + GUIDES_VALLE
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
@@ -498,8 +501,7 @@ def guide(g, lang):
   </section>
   <h2>{e(p['sources_h2'])}</h2>
   <ul class="small">{srcs}</ul>
-  <h2>{e(p['photos_h2'])}</h2>
-  <ul class="small">{photos}</ul>
+  {f'<h2>{e(p["photos_h2"])}</h2><ul class="small">{photos}</ul>' if photos else ''}
 </article>
 """
     return page(lang, "home", p["title"], p["desc"], body, [art, faq, bc], og_image=g["hero"], paths=g["paths"])
