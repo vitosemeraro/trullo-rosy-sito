@@ -38,7 +38,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "4"
+ASSET_VER = "5"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -92,6 +92,65 @@ def book_buttons(t):
         f'<a class="btn btn-wa" href="{WHATSAPP}" rel="noopener" target="_blank">{e(t["whatsapp"])}</a>'
         "</div>"
     )
+
+
+# Box "dormi qui" delle guide (13/11/2026): foto del trullo, fatti veri, link con le date già compilate.
+# Distanza: dal pin GEO a Locorotondo ~12 km in linea d'aria, circa 20 minuti d'auto.
+STAY = {
+    "it": dict(facts="Trullo intero per 6 ospiti: 3 camere, camino, giardino e parcheggio. A circa 20 minuti d'auto da Locorotondo, Martina Franca e Alberobello.",
+               see="Guarda il trullo e le foto", prices="Vedi prezzi e disponibilità", ask="Chiedi su WhatsApp",
+               wa="Ciao, vorrei sapere se Trullo Rosy è libero {d} per {n} persone.",
+               dates={"immacolata": "Ponte dell'Immacolata, 5-8 dicembre 2026", "capodanno": "Capodanno, 29 dicembre 2026 - 2 gennaio 2027"}),
+    "en": dict(facts="Whole trullo for up to 6 guests: 3 bedrooms, fireplace, garden and parking. About 20 minutes by car from Locorotondo, Martina Franca and Alberobello.",
+               see="See the trullo and photos", prices="See prices and availability", ask="Ask on WhatsApp",
+               wa="Hi, is Trullo Rosy available {d} for {n} people?",
+               dates={"immacolata": "Immaculate Conception weekend, 5-8 December 2026", "capodanno": "New Year, 29 December 2026 - 2 January 2027"}),
+    "fr": dict(facts="Trullo entier jusqu'à 6 personnes : 3 chambres, cheminée, jardin et parking. À environ 20 minutes en voiture de Locorotondo, Martina Franca et Alberobello.",
+               see="Voir le trullo et les photos", prices="Voir prix et disponibilités", ask="Demander sur WhatsApp",
+               wa="Bonjour, Trullo Rosy est-il libre {d} pour {n} personnes ?",
+               dates={"immacolata": "Pont de l'Immaculée, 5-8 décembre 2026", "capodanno": "Nouvel An, 29 décembre 2026 - 2 janvier 2027"}),
+    "de": dict(facts="Ganzer Trullo für bis zu 6 Gäste: 3 Schlafzimmer, Kamin, Garten und Parkplatz. Etwa 20 Autominuten von Locorotondo, Martina Franca und Alberobello.",
+               see="Trullo und Fotos ansehen", prices="Preise und Verfügbarkeit", ask="Per WhatsApp fragen",
+               wa="Hallo, ist Trullo Rosy {d} für {n} Personen frei?",
+               dates={"immacolata": "Mariä Empfängnis, 5.-8. Dezember 2026", "capodanno": "Silvester, 29. Dezember 2026 - 2. Januar 2027"}),
+    "nl": dict(facts="Hele trullo voor maximaal 6 gasten: 3 slaapkamers, open haard, tuin en parkeerplaats. Ongeveer 20 minuten rijden van Locorotondo, Martina Franca en Alberobello.",
+               see="Bekijk de trullo en foto's", prices="Bekijk prijzen en beschikbaarheid", ask="Vraag via WhatsApp",
+               wa="Hallo, is Trullo Rosy vrij {d} voor {n} personen?",
+               dates={"immacolata": "Maria-Onbevlekt-weekend, 5-8 december 2026", "capodanno": "Oud en nieuw, 29 december 2026 - 2 januari 2027"}),
+    "es": dict(facts="Trullo entero para hasta 6 huéspedes: 3 dormitorios, chimenea, jardín y aparcamiento. A unos 20 minutos en coche de Locorotondo, Martina Franca y Alberobello.",
+               see="Ver el trullo y las fotos", prices="Ver precios y disponibilidad", ask="Preguntar por WhatsApp",
+               wa="Hola, ¿está libre Trullo Rosy {d} para {n} personas?",
+               dates={"immacolata": "Puente de la Inmaculada, 5-8 de diciembre de 2026", "capodanno": "Fin de año, 29 de diciembre de 2026 - 2 de enero de 2027"}),
+}
+SEASON_DATES = {
+    "natale-locorotondo": [("immacolata", "2026-12-05", "2026-12-08"), ("capodanno", "2026-12-29", "2027-01-02")],
+    "mercatini-natale-puglia": [("immacolata", "2026-12-05", "2026-12-08"), ("capodanno", "2026-12-29", "2027-01-02")],
+}
+
+
+def stay_box(g, lang, title, cls="book-box"):
+    from urllib.parse import quote
+    s = STAY.get(lang, STAY["en"])
+    rows = ""
+    for k, ci, co in SEASON_DATES.get(g["key"], []):
+        lab = s["dates"][k]
+        wa = WHATSAPP + "?text=" + quote(s["wa"].format(d="(" + lab + ")", n=4))
+        rows += (f'<li><strong>{e(lab)}</strong><span class="cta">'
+                 f'<a class="btn btn-small" href="{AIRBNB}?check_in={ci}&amp;check_out={co}&amp;adults=2" rel="noopener" target="_blank">Airbnb</a>'
+                 f'<a class="btn btn-small" href="{BOOKING}?checkin={ci}&amp;checkout={co}&amp;group_adults=2" rel="noopener" target="_blank">Booking.com</a>'
+                 f'<a class="btn btn-small btn-wa" href="{wa}" rel="noopener" target="_blank">WhatsApp</a></span></li>')
+    dates_html = f'<ul class="stay-dates">{rows}</ul>' if rows else ""
+    trullo_url = PATHS["trullo"][lang]
+    return f"""<aside class="{cls} stay-box" aria-label="{e(title)}">
+    <a class="stay-img" href="{trullo_url}">{img('salotto-camino', s['see'])}</a>
+    <div>
+      <p class="book-box-t">{e(title)}</p>
+      <p class="stay-facts">{e(s['facts'])}</p>
+      {dates_html if dates_html else ''}
+      {'' if dates_html else book_buttons(C[lang])}
+      <p class="stay-more"><a href="{trullo_url}">{e(s['see'])} →</a></p>
+    </div>
+  </aside>"""
 
 
 def place_name(lang, key, default):
@@ -490,13 +549,11 @@ def guide(g, lang):
 </section>
 <article class="wrap guide">
   <p class="answer-box">{e(p['answer'])}</p>
-  <aside class="book-box" aria-label="{e(p['cta_h2'])}">
-    <p class="book-box-t">{e(p['cta_h2'])}</p>
-    {book_buttons(t)}
-  </aside>
+  {stay_box(g, lang, p['cta_h2'])}
   {body_html}
   <section class="final">
     <h2>{e(p['cta_h2'])}</h2>
+    {stay_box(g, lang, p['cta_h2'], cls="stay-final")}
     {book_buttons(t)}
   </section>
   <h2>{e(p['sources_h2'])}</h2>
