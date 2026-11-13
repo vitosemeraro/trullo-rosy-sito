@@ -35,7 +35,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "2"
+ASSET_VER = "3"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -166,7 +166,13 @@ def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=
 <div class="cookie" id="cookie" hidden>
   <p>{e(t['cookie_text'])} <a href="{PATHS['privacy'][lang]}">{e(t['privacy'])}</a></p>
   <button type="button" class="btn btn-small" data-consent="granted">{e(t['cookie_yes'])}</button>
-  <button type="button" class="btn btn-small btn-ghost" data-consent="denied">{e(t['cookie_no'])}</button>
+  <button type="button" class="linkbtn" data-cookie-settings aria-expanded="false">{e(t['cookie_set'])}</button>
+  <div class="cookie-panel" hidden>
+    <label><input type="checkbox" checked disabled> {e(t['cookie_nec'])}</label>
+    <label><input type="checkbox" data-cookie-stat> {e(t['cookie_stat'])}</label>
+    <button type="button" class="btn btn-small btn-ghost" data-cookie-save>{e(t['cookie_save'])}</button>
+  </div>
+  <button type="button" class="cookie-x" data-consent="denied" aria-label="{e(t['cookie_close'])}" title="{e(t['cookie_close'])}">&times;</button>
 </div>
 <script>window.GA4="{GA4}";</script>
 <script src="/assets/site.js?v={ASSET_VER}" defer></script>

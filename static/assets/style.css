@@ -74,6 +74,12 @@ small{font-family:system-ui,sans-serif;font-size:.55em;color:var(--muted);font-w
 .copy{font-size:.85rem;opacity:.75;margin-top:1.5em}
 .cookie{position:fixed;left:16px;right:16px;bottom:16px;max-width:620px;margin:0 auto;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 30px rgba(0,0,0,.15);padding:1em 1.2em;z-index:10;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .cookie[hidden]{display:none}
+.cookie{padding-right:3em}
+.cookie-x{position:absolute;top:4px;right:6px;background:none;border:0;font-size:1.6rem;line-height:1;padding:6px 10px;cursor:pointer;color:inherit}
+.cookie-panel{flex:1 1 100%;display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:10px}
+.cookie-panel[hidden]{display:none}
+.cookie-panel label{display:flex;gap:8px;align-items:center;font-size:.95rem}
+.cookie-panel .btn{align-self:flex-start;margin-top:4px}
 .cookie p{margin:0;flex:1 1 100%;font-size:.95rem}
 @media (max-width:820px){
  .split,.rooms .room,.foot-in{grid-template-columns:1fr}

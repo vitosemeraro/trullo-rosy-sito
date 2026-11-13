@@ -43,7 +43,7 @@ C["it"] = dict(
     footer_tag="Trullo tradizionale nelle campagne di Martina Franca, in Valle d'Itria (Puglia).",
     privacy="Privacy e cookie", country="Italia", langs_label="Lingua",
     cookie_text="Usiamo Google Analytics solo se accetti, per capire quante persone visitano il sito.",
-    cookie_yes="Accetta", cookie_no="Rifiuta",
+    cookie_yes="Accetta", cookie_no="Rifiuta", cookie_set="Impostazioni", cookie_close="Chiudi e continua senza accettare", cookie_nec="Necessari: sempre attivi", cookie_stat="Statistiche (Google Analytics)", cookie_save="Salva le scelte",
     schema_desc="Trullo tradizionale con tre camere, giardino e uliveto nelle campagne di Martina Franca, in Valle d'Itria.",
     amenities=[
         ("Essenziali", ["Cucina attrezzata", "Wi-Fi veloce", "Spazio di lavoro", "Parcheggio gratuito nella proprietà", "TV", "Lavatrice"]),
@@ -159,7 +159,7 @@ C["it"] = dict(
         p1="Questo sito non ha moduli e non raccoglie dati personali. Se ci scrivi via WhatsApp, email o telefono, usiamo i tuoi dati solo per risponderti e gestire il soggiorno.",
         stats_h2="Statistiche",
         cf="Cloudflare Web Analytics conta le visite in forma aggregata, senza cookie.",
-        ga="Google Analytics 4 si attiva solo se premi \"Accetta\" nel banner e usa cookie per misurare le visite in forma anonima.",
+        ga="Google Analytics 4 si attiva solo se premi \"Accetta\" nel banner (o la attivi da \"Impostazioni\"; chiudendo il banner con la X non si attiva) e usa cookie per misurare le visite in forma anonima.",
         reset="Rivedi la scelta sui cookie",
         book_h2="Prenotazioni",
         book_p="Le prenotazioni fatte su Airbnb o Booking.com seguono le informative di quelle piattaforme.",
@@ -176,7 +176,7 @@ C["en"] = dict(
     footer_tag="A traditional trullo in the countryside of Martina Franca, Itria Valley (Puglia).",
     privacy="Privacy and cookies", country="Italy", langs_label="Language",
     cookie_text="We use Google Analytics only if you accept, to understand how many people visit the site.",
-    cookie_yes="Accept", cookie_no="Decline",
+    cookie_yes="Accept", cookie_no="Decline", cookie_set="Settings", cookie_close="Close and continue without accepting", cookie_nec="Necessary: always on", cookie_stat="Statistics (Google Analytics)", cookie_save="Save choices",
     schema_desc="A traditional trullo with three bedrooms, a garden and an olive grove in the countryside of Martina Franca, Itria Valley.",
     amenities=[
         ("Essentials", ["Fully equipped kitchen", "Fast Wi-Fi", "Dedicated workspace", "Free parking on the property", "TV", "Washing machine"]),
@@ -292,7 +292,7 @@ C["en"] = dict(
         p1="This site has no forms and does not collect personal data. If you contact us via WhatsApp, email or phone, we use your data only to reply and to manage your stay.",
         stats_h2="Statistics",
         cf="Cloudflare Web Analytics counts visits in aggregate, without cookies.",
-        ga="Google Analytics 4 is enabled only if you press \"Accept\" in the banner, and uses cookies to measure visits anonymously.",
+        ga="Google Analytics 4 is enabled only if you press \"Accept\" in the banner (or turn it on in \"Settings\"; closing the banner with the X keeps it off), and uses cookies to measure visits anonymously.",
         reset="Review your cookie choice",
         book_h2="Bookings",
         book_p="Bookings made on Airbnb or Booking.com follow those platforms' privacy policies.",
@@ -309,7 +309,7 @@ C["fr"] = dict(
     footer_tag="Un trullo traditionnel dans la campagne de Martina Franca, vallée d'Itria (Pouilles).",
     privacy="Confidentialité et cookies", country="Italie", langs_label="Langue",
     cookie_text="Nous utilisons Google Analytics uniquement si vous acceptez, pour savoir combien de personnes visitent le site.",
-    cookie_yes="Accepter", cookie_no="Refuser",
+    cookie_yes="Accepter", cookie_no="Refuser", cookie_set="Paramètres", cookie_close="Fermer et continuer sans accepter", cookie_nec="Nécessaires : toujours actifs", cookie_stat="Statistiques (Google Analytics)", cookie_save="Enregistrer mes choix",
     schema_desc="Un trullo traditionnel avec trois chambres, un jardin et une oliveraie dans la campagne de Martina Franca, vallée d'Itria.",
     amenities=[
         ("L'essentiel", ["Cuisine équipée", "Wi-Fi rapide", "Espace de travail", "Parking gratuit sur la propriété", "Télévision", "Lave-linge"]),
@@ -442,7 +442,7 @@ C["de"] = dict(
     footer_tag="Ein traditioneller Trullo auf dem Land bei Martina Franca, Itria-Tal (Apulien).",
     privacy="Datenschutz und Cookies", country="Italien", langs_label="Sprache",
     cookie_text="Wir nutzen Google Analytics nur mit deiner Zustimmung, um zu sehen, wie viele Menschen die Seite besuchen.",
-    cookie_yes="Akzeptieren", cookie_no="Ablehnen",
+    cookie_yes="Akzeptieren", cookie_no="Ablehnen", cookie_set="Einstellungen", cookie_close="Schließen und ohne Zustimmung fortfahren", cookie_nec="Notwendig: immer aktiv", cookie_stat="Statistik (Google Analytics)", cookie_save="Auswahl speichern",
     schema_desc="Ein traditioneller Trullo mit drei Schlafzimmern, Garten und Olivenhain auf dem Land bei Martina Franca im Itria-Tal.",
     amenities=[
         ("Das Wichtigste", ["Voll ausgestattete Küche", "Schnelles WLAN", "Arbeitsplatz", "Kostenloser Parkplatz auf dem Grundstück", "Fernseher", "Waschmaschine"]),
@@ -575,7 +575,7 @@ C["nl"] = dict(
     footer_tag="Een traditionele trullo op het platteland van Martina Franca, Itria-vallei (Apulië).",
     privacy="Privacy en cookies", country="Italië", langs_label="Taal",
     cookie_text="We gebruiken Google Analytics alleen als je akkoord gaat, om te zien hoeveel mensen de site bezoeken.",
-    cookie_yes="Accepteren", cookie_no="Weigeren",
+    cookie_yes="Accepteren", cookie_no="Weigeren", cookie_set="Instellingen", cookie_close="Sluiten en doorgaan zonder te accepteren", cookie_nec="Noodzakelijk: altijd actief", cookie_stat="Statistieken (Google Analytics)", cookie_save="Keuze opslaan",
     schema_desc="Een traditionele trullo met drie slaapkamers, een tuin en een olijfgaard op het platteland van Martina Franca, Itria-vallei.",
     amenities=[
         ("Basis", ["Volledig ingerichte keuken", "Snelle wifi", "Werkplek", "Gratis parkeren op het terrein", "Tv", "Wasmachine"]),
@@ -708,7 +708,7 @@ C["es"] = dict(
     footer_tag="Un trullo tradicional en el campo de Martina Franca, valle de Itria (Apulia).",
     privacy="Privacidad y cookies", country="Italia", langs_label="Idioma",
     cookie_text="Usamos Google Analytics solo si aceptas, para saber cuántas personas visitan el sitio.",
-    cookie_yes="Aceptar", cookie_no="Rechazar",
+    cookie_yes="Aceptar", cookie_no="Rechazar", cookie_set="Ajustes", cookie_close="Cerrar y continuar sin aceptar", cookie_nec="Necesarias: siempre activas", cookie_stat="Estadísticas (Google Analytics)", cookie_save="Guardar opciones",
     schema_desc="Un trullo tradicional con tres dormitorios, jardín y olivar en el campo de Martina Franca, valle de Itria.",
     amenities=[
         ("Lo esencial", ["Cocina equipada", "Wi-Fi rápido", "Zona de trabajo", "Aparcamiento gratuito en la propiedad", "TV", "Lavadora"]),
