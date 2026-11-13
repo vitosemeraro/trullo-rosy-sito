@@ -439,7 +439,7 @@ def redirect_page(target):
 """
 
 
-GUIDE_LABEL = {"it": "Guida", "en": "Guide"}
+GUIDE_LABEL = {"it": "Guida", "en": "Guide", "fr": "Guide", "de": "Reisetipps", "nl": "Gids", "es": "Guía"}
 
 
 def guide(g, lang):

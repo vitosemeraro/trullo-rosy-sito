@@ -10,7 +10,9 @@ GUIDES = [
         "date": "2026-11-10",
         "modified": "2026-11-13",
         "hero": "locorotondo/tramonto",
-        "paths": {"it": "/guide/natale-a-locorotondo/", "en": "/en/guides/christmas-in-locorotondo/"},
+        "paths": {"it": "/guide/natale-a-locorotondo/", "en": "/en/guides/christmas-in-locorotondo/",
+                  "fr": "/fr/guides/noel-a-locorotondo/", "de": "/de/reisetipps/weihnachten-in-locorotondo/",
+                  "nl": "/nl/gidsen/kerst-in-locorotondo/", "es": "/es/guias/navidad-en-locorotondo/"},
         "sources": [
             ("Comune di Locorotondo, avviso \"Natale a Locorotondo 2026\" (7 settembre 2026)",
              "https://www.comune.locorotondo.ba.it/it/news/natale-a-locorotondo-2026-avviso-pubblico-per-la-presentazione-di-proposte-progettuali"),
@@ -136,6 +138,238 @@ GUIDES = [
             sources_h2="Sources",
             photos_h2="Photos",
             updated="Updated 13 November 2026",
+        ),
+        "fr": dict(
+            title="Noël à Locorotondo 2026 : illuminations et dates",
+            desc="Noël et le pont de l'Immaculée Conception à Locorotondo, dans les Pouilles : dates des illuminations, marchés de Noël et où dormir dans un trullo.",
+            h1="Noël à Locorotondo : illuminations, 8 décembre et marchés",
+            answer="À Noël, le centre historique de Locorotondo se remplit d'illuminations entre ses ruelles blanches et ses maisons aux toits pointus. Pour 2026, la commune a prévu un programme du 22 novembre 2026 au 6 janvier 2027 : le pont de l'Immaculée Conception (8 décembre) tombe donc en pleine période des lumières. Le programme officiel avec les horaires n'est pas encore publié : nous mettrons cette page à jour dès sa sortie.",
+            body="""
+<h2>Quand s'allument les illuminations de Locorotondo en 2026 ?</h2>
+<p>Dans son avis du 7 septembre 2026, la Commune de Locorotondo a prévu les animations de Noël <strong>du 22 novembre 2026 environ au 6 janvier 2027</strong>. Le 5 novembre 2026, la Commune a lancé un appel à sponsors pour les <strong>« Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio »</strong> (candidatures jusqu'au 16 novembre) : le thème de cette édition est donc Pinocchio. Au 13 novembre 2026, la date exacte de l'allumage, les horaires et le parcours n'ont pas encore été annoncés.</p>
+<p>Ces dernières années, les lumières se sont allumées dans la seconde moitié de novembre et sont restées jusqu'aux premiers jours de janvier.</p>
+<table class="facts">
+<thead><tr><th scope="col">Année</th><th scope="col">Allumage</th><th scope="col">Jusqu'au</th></tr></thead>
+<tbody>
+<tr><th scope="row">2024</th><td>14 novembre</td><td>début janvier</td></tr>
+<tr><th scope="row">2025</th><td>22 novembre</td><td>première semaine de janvier 2026</td></tr>
+<tr><th scope="row">2026</th><td>programme prévu à partir du 22 novembre (date à confirmer)</td><td>6 janvier 2027</td></tr>
+</tbody>
+</table>
+{{img:locorotondo/vicolo-luci|Une ruelle du centre historique de Locorotondo sous les lumières suspendues}}
+
+<h2>Pourquoi aller à Locorotondo le 8 décembre ?</h2>
+<p>Le 8 décembre, fête de l'Immaculée Conception, et le pont qui l'accompagne sont le moment où toutes les illuminations sont allumées et où les marchés de Noël sont ouverts. Le centre historique est petit et se visite à pied : au coucher du soleil, quand les lumières s'allument sur les façades blanches, c'est le plus beau moment pour une promenade.</p>
+<p>Le reste de la vallée d'Itria fait la fête à la même période : Martina Franca, Alberobello et Cisternino sont tout proches, et on peut en voir deux dans la même journée.</p>
+
+<h2>Où sont les lumières dans le centre historique ?</h2>
+<p>En 2025, le parcours des illuminations partait de la <strong>piazza Aldo Moro</strong> et traversait la <strong>via Porta Nuova, la via Morelli, la via Montanaro, la via Bruno et la via Eroi Dogali</strong>, avec les lumières allumées chaque soir à partir de 17 h environ. Le parcours 2026 n'a pas encore été annoncé.</p>
+{{img:locorotondo/via-morelli|La via Morelli, dans le centre historique de Locorotondo}}
+<p>En chemin, arrêtez-vous à l'<strong>église mère Saint-Georges-Martyr</strong> (Chiesa Madre di San Giorgio Martire), avec sa grande coupole, et au belvédère du jardin public (villa comunale), qui donne sur la campagne des trulli.</p>
+{{img:locorotondo/san-giorgio|L'intérieur de l'église mère Saint-Georges à Locorotondo}}
+
+<h2>Y a-t-il des marchés de Noël ?</h2>
+<p>Oui. En 2025, les marchés ont été ouverts <strong>du 30 novembre 2025 au 6 janvier 2026</strong> sur la piazza Aldo Moro, dans le jardin public et dans les rues proches de la mairie. Les dates 2026 ne sont pas encore officielles.</p>
+
+<h2>Comment organiser la visite ?</h2>
+<ul>
+<li><strong>Quand :</strong> arrivez en fin d'après-midi pour voir le village à la lumière du jour, puis avec les illuminations allumées.</li>
+<li><strong>Le week-end</strong> et au pont du 8 décembre, il y a beaucoup de monde : si vous le pouvez, choisissez un jour de semaine.</li>
+<li><strong>Tenue :</strong> le soir, il fait froid sur les collines et les rues du centre sont pavées de pierre.</li>
+<li><strong>Où dormir :</strong> Locorotondo est voisine de Martina Franca. Dormir dans un trullo à la campagne, comme <a href="/fr/le-trullo/">Trullo Rosy</a>, permet de visiter les villages de la vallée d'Itria et de retrouver le soir le calme, devant la cheminée.</li>
+</ul>
+{{img:locorotondo/trulli-campagna|La campagne des trulli vue depuis le jardin public de Locorotondo}}
+
+<h2>Questions fréquentes</h2>
+<details><summary>Quand commencent les illuminations de Locorotondo en 2026 ?</summary><p>La commune a prévu la période du 22 novembre 2026 au 6 janvier 2027. La date exacte de l'allumage n'a pas encore été annoncée.</p></details>
+<details><summary>Les lumières sont-elles allumées le 8 décembre ?</summary><p>Oui : le 8 décembre tombe dans la période prévue par la commune, et ces dernières années les lumières étaient déjà allumées dès la fin novembre.</p></details>
+<details><summary>À quelle heure s'allument les lumières ?</summary><p>En 2025, les lumières s'allumaient chaque soir à partir de 17 h environ. Les horaires 2026 n'ont pas encore été publiés.</p></details>
+<details><summary>Où dormir près de Locorotondo à Noël ?</summary><p>Dans la campagne entre Martina Franca et Locorotondo, il y a des trulli à louer, comme Trullo Rosy : un trullo entier avec trois chambres, une cheminée et un parking.</p></details>
+""",
+            faq=[
+                ("Quand commencent les illuminations de Locorotondo en 2026 ?", "La commune a prévu la période du 22 novembre 2026 au 6 janvier 2027. La date exacte de l'allumage n'a pas encore été annoncée."),
+                ("Les lumières sont-elles allumées le 8 décembre ?", "Oui : le 8 décembre tombe dans la période prévue par la commune, et ces dernières années les lumières étaient déjà allumées dès la fin novembre."),
+                ("À quelle heure s'allument les lumières ?", "En 2025, les lumières s'allumaient chaque soir à partir de 17 h environ. Les horaires 2026 n'ont pas encore été publiés."),
+                ("Où dormir près de Locorotondo à Noël ?", "Dans la campagne entre Martina Franca et Locorotondo, il y a des trulli à louer, comme Trullo Rosy : un trullo entier avec trois chambres, une cheminée et un parking."),
+            ],
+            cta_h2="Dormez dans un trullo tout près des lumières",
+            sources_h2="Sources",
+            photos_h2="Photos",
+            updated="Mis à jour le 13 novembre 2026",
+        ),
+        "de": dict(
+            title="Weihnachten in Locorotondo 2026: Lichter und Termine",
+            desc="Weihnachten und Mariä Empfängnis in Locorotondo, Apulien: wann die Lichter angehen, wo man sie sieht, Weihnachtsmärkte und Übernachten im Trullo.",
+            h1="Weihnachten in Locorotondo: Lichter, 8. Dezember und Märkte",
+            answer="An Weihnachten füllt sich die Altstadt von Locorotondo mit Lichtern zwischen den weißen Gassen und den Häusern mit spitzen Dächern. Für 2026 hat die Gemeinde ein Programm vom 22. November 2026 bis 6. Januar 2027 vorgesehen, der Feiertag Mariä Empfängnis (8. Dezember) liegt also mitten in der Lichterzeit. Das offizielle Programm mit Uhrzeiten ist noch nicht veröffentlicht: Wir aktualisieren diese Seite, sobald es erscheint.",
+            body="""
+<h2>Wann gehen die Weihnachtslichter in Locorotondo 2026 an?</h2>
+<p>In ihrer Bekanntmachung vom 7. September 2026 hat die Gemeinde Locorotondo das Weihnachtsprogramm <strong>etwa vom 22. November 2026 bis 6. Januar 2027</strong> geplant. Am 5. November 2026 hat die Gemeinde Sponsoren für die <strong>„Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio“</strong> gesucht (Bewerbungen bis 16. November): Das Thema 2026 ist also Pinocchio. Stand 13. November 2026 sind das genaue Datum der Einschaltung, die Uhrzeiten und der Rundgang noch nicht bekannt gegeben.</p>
+<p>In den letzten Jahren gingen die Lichter in der zweiten Novemberhälfte an und blieben bis Anfang Januar.</p>
+<table class="facts">
+<thead><tr><th scope="col">Jahr</th><th scope="col">Einschaltung</th><th scope="col">Bis</th></tr></thead>
+<tbody>
+<tr><th scope="row">2024</th><td>14. November</td><td>Anfang Januar</td></tr>
+<tr><th scope="row">2025</th><td>22. November</td><td>erste Januarwoche 2026</td></tr>
+<tr><th scope="row">2026</th><td>Programm ab 22. November geplant (Datum noch offen)</td><td>6. Januar 2027</td></tr>
+</tbody>
+</table>
+{{img:locorotondo/vicolo-luci|Eine Gasse in der Altstadt von Locorotondo mit aufgehängten Lichtern}}
+
+<h2>Warum am 8. Dezember nach Locorotondo?</h2>
+<p>Am 8. Dezember, dem Feiertag Mariä Empfängnis, und am langen Wochenende rund um diesen Tag sind alle Lichter an und die Weihnachtsmärkte geöffnet. Die Altstadt ist klein und lässt sich zu Fuß erkunden: Bei Sonnenuntergang, wenn die Lichter auf den weißen Fassaden angehen, ist der schönste Moment für einen Spaziergang.</p>
+<p>Das übrige Itria-Tal feiert zur selben Zeit: Martina Franca, Alberobello und Cisternino liegen ganz in der Nähe, an einem Tag schafft man zwei davon.</p>
+
+<h2>Wo sind die Lichter in der Altstadt?</h2>
+<p>2025 begann der Lichterweg an der <strong>Piazza Aldo Moro</strong> und führte durch <strong>Via Porta Nuova, Via Morelli, Via Montanaro, Via Bruno und Via Eroi Dogali</strong>; die Lichter brannten jeden Abend ab etwa 17 Uhr. Der Weg für 2026 ist noch nicht bekannt gegeben.</p>
+{{img:locorotondo/via-morelli|Die Via Morelli in der Altstadt von Locorotondo}}
+<p>Unterwegs lohnt sich ein Halt an der <strong>Mutterkirche San Giorgio Martire</strong> mit ihrer großen Kuppel und am Aussichtspunkt des Stadtparks (Villa comunale), der über die Trulli-Landschaft blickt.</p>
+{{img:locorotondo/san-giorgio|Das Innere der Mutterkirche San Giorgio in Locorotondo}}
+
+<h2>Gibt es Weihnachtsmärkte?</h2>
+<p>Ja. 2025 waren die Märkte <strong>vom 30. November 2025 bis 6. Januar 2026</strong> auf der Piazza Aldo Moro, im Stadtpark und in den Straßen beim Rathaus geöffnet. Die Termine 2026 sind noch nicht offiziell.</p>
+
+<h2>Wie plant man den Besuch?</h2>
+<ul>
+<li><strong>Wann:</strong> Komm am späten Nachmittag, dann siehst du den Ort bei Tageslicht und danach mit den Lichtern.</li>
+<li><strong>An Wochenenden</strong> und am langen Wochenende um den 8. Dezember ist viel los: Wähle wenn möglich einen Wochentag.</li>
+<li><strong>Kleidung:</strong> Abends ist es auf den Hügeln kalt, und die Straßen der Altstadt sind aus Stein.</li>
+<li><strong>Übernachten:</strong> Locorotondo grenzt an Martina Franca. In einem Trullo auf dem Land wie <a href="/de/der-trullo/">Trullo Rosy</a> kannst du die Orte des Itria-Tals besuchen und abends in die Ruhe vor dem Kamin zurückkehren.</li>
+</ul>
+{{img:locorotondo/trulli-campagna|Die Trulli-Landschaft vom Stadtpark in Locorotondo aus gesehen}}
+
+<h2>Häufige Fragen</h2>
+<details><summary>Wann beginnen die Lichter in Locorotondo 2026?</summary><p>Die Gemeinde hat den Zeitraum vom 22. November 2026 bis 6. Januar 2027 geplant. Das genaue Datum der Einschaltung ist noch nicht bekannt gegeben.</p></details>
+<details><summary>Sind die Lichter am 8. Dezember an?</summary><p>Ja: Der 8. Dezember liegt im von der Gemeinde geplanten Zeitraum, und in den letzten Jahren waren die Lichter schon ab Ende November an.</p></details>
+<details><summary>Um wie viel Uhr gehen die Lichter an?</summary><p>2025 gingen die Lichter jeden Abend ab etwa 17 Uhr an. Die Zeiten für 2026 sind noch nicht veröffentlicht.</p></details>
+<details><summary>Wo übernachten in der Nähe von Locorotondo an Weihnachten?</summary><p>Auf dem Land zwischen Martina Franca und Locorotondo gibt es Trulli zur Miete, zum Beispiel Trullo Rosy: ein ganzer Trullo mit drei Schlafzimmern, Kamin und Parkplatz.</p></details>
+""",
+            faq=[
+                ("Wann beginnen die Lichter in Locorotondo 2026?", "Die Gemeinde hat den Zeitraum vom 22. November 2026 bis 6. Januar 2027 geplant. Das genaue Datum der Einschaltung ist noch nicht bekannt gegeben."),
+                ("Sind die Lichter am 8. Dezember an?", "Ja: Der 8. Dezember liegt im von der Gemeinde geplanten Zeitraum, und in den letzten Jahren waren die Lichter schon ab Ende November an."),
+                ("Um wie viel Uhr gehen die Lichter an?", "2025 gingen die Lichter jeden Abend ab etwa 17 Uhr an. Die Zeiten für 2026 sind noch nicht veröffentlicht."),
+                ("Wo übernachten in der Nähe von Locorotondo an Weihnachten?", "Auf dem Land zwischen Martina Franca und Locorotondo gibt es Trulli zur Miete, zum Beispiel Trullo Rosy: ein ganzer Trullo mit drei Schlafzimmern, Kamin und Parkplatz."),
+            ],
+            cta_h2="Übernachte in einem Trullo nahe den Lichtern",
+            sources_h2="Quellen",
+            photos_h2="Fotos",
+            updated="Aktualisiert am 13. November 2026",
+        ),
+        "nl": dict(
+            title="Kerst in Locorotondo 2026: verlichting en data",
+            desc="Kerst en Maria-Onbevlekte-Ontvangenis in Locorotondo, Apulië: wanneer de verlichting aangaat, waar je die ziet, kerstmarkten en slapen in een trullo.",
+            h1="Kerst in Locorotondo: verlichting, 8 december en markten",
+            answer="Met Kerst vult het historische centrum van Locorotondo zich met lichtjes tussen de witte steegjes en de huizen met puntdaken. Voor 2026 heeft de gemeente een programma gepland van 22 november 2026 tot 6 januari 2027, dus de feestdag van Maria Onbevlekte Ontvangenis (8 december) valt midden in de lichtjesperiode. Het officiële programma met tijden is nog niet gepubliceerd: we werken deze pagina bij zodra het verschijnt.",
+            body="""
+<h2>Wanneer gaat de kerstverlichting in Locorotondo in 2026 aan?</h2>
+<p>In haar bekendmaking van 7 september 2026 heeft de gemeente Locorotondo het kerstprogramma gepland <strong>van ongeveer 22 november 2026 tot 6 januari 2027</strong>. Op 5 november 2026 zocht de gemeente sponsors voor de <strong>“Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio”</strong> (aanmelden tot 16 november): het thema van 2026 is dus Pinokkio. Op 13 november 2026 zijn de exacte datum van het aangaan, de tijden en de route nog niet bekendgemaakt.</p>
+<p>De afgelopen jaren ging de verlichting aan in de tweede helft van november en bleef ze tot begin januari.</p>
+<table class="facts">
+<thead><tr><th scope="col">Jaar</th><th scope="col">Aangaan</th><th scope="col">Tot</th></tr></thead>
+<tbody>
+<tr><th scope="row">2024</th><td>14 november</td><td>begin januari</td></tr>
+<tr><th scope="row">2025</th><td>22 november</td><td>eerste week van januari 2026</td></tr>
+<tr><th scope="row">2026</th><td>programma gepland vanaf 22 november (datum nog te bevestigen)</td><td>6 januari 2027</td></tr>
+</tbody>
+</table>
+{{img:locorotondo/vicolo-luci|Een steegje in het historische centrum van Locorotondo met lichtjes erboven}}
+
+<h2>Waarom op 8 december naar Locorotondo?</h2>
+<p>Op 8 december, de feestdag van Maria Onbevlekte Ontvangenis, en in het lange weekend eromheen is alle verlichting aan en zijn de kerstmarkten open. Het historische centrum is klein en goed te voet te doen: bij zonsondergang, als de lichtjes aangaan op de witte gevels, is het mooiste moment voor een wandeling.</p>
+<p>De rest van het Itria-dal viert in dezelfde periode feest: Martina Franca, Alberobello en Cisternino liggen vlakbij, en op één dag zie je er twee.</p>
+
+<h2>Waar is de verlichting in het historische centrum?</h2>
+<p>In 2025 begon de route van de verlichting op de <strong>Piazza Aldo Moro</strong> en liep door de <strong>Via Porta Nuova, Via Morelli, Via Montanaro, Via Bruno en Via Eroi Dogali</strong>, met de lichtjes elke avond aan vanaf ongeveer 17.00 uur. De route van 2026 is nog niet bekendgemaakt.</p>
+{{img:locorotondo/via-morelli|De Via Morelli in het historische centrum van Locorotondo}}
+<p>Onderweg is een stop de moeite waard bij de <strong>moederkerk San Giorgio Martire</strong> met haar grote koepel, en bij het uitzichtpunt van het stadspark (Villa comunale), dat uitkijkt over het land van de trulli.</p>
+{{img:locorotondo/san-giorgio|Het interieur van de moederkerk San Giorgio in Locorotondo}}
+
+<h2>Zijn er kerstmarkten?</h2>
+<p>Ja. In 2025 waren de markten open <strong>van 30 november 2025 tot 6 januari 2026</strong> op de Piazza Aldo Moro, in het stadspark en in de straten bij het gemeentehuis. De data voor 2026 zijn nog niet officieel.</p>
+
+<h2>Hoe plan je je bezoek?</h2>
+<ul>
+<li><strong>Wanneer:</strong> kom aan het eind van de middag, dan zie je het dorp bij daglicht en daarna met de verlichting aan.</li>
+<li><strong>In het weekend</strong> en rond 8 december is het druk: kies als het kan een doordeweekse dag.</li>
+<li><strong>Kleding:</strong> 's avonds is het koud op de heuvels, en de straten in het centrum zijn van steen.</li>
+<li><strong>Waar slapen:</strong> Locorotondo grenst aan Martina Franca. In een trullo op het platteland, zoals <a href="/nl/de-trullo/">Trullo Rosy</a>, bezoek je de dorpen van het Itria-dal en keer je 's avonds terug naar de rust bij de open haard.</li>
+</ul>
+{{img:locorotondo/trulli-campagna|Het land van de trulli gezien vanuit het stadspark van Locorotondo}}
+
+<h2>Veelgestelde vragen</h2>
+<details><summary>Wanneer begint de verlichting in Locorotondo in 2026?</summary><p>De gemeente heeft de periode van 22 november 2026 tot 6 januari 2027 gepland. De exacte datum van het aangaan is nog niet bekendgemaakt.</p></details>
+<details><summary>Is de verlichting aan op 8 december?</summary><p>Ja: 8 december valt binnen de door de gemeente geplande periode, en de afgelopen jaren was de verlichting al vanaf eind november aan.</p></details>
+<details><summary>Hoe laat gaat de verlichting aan?</summary><p>In 2025 ging de verlichting elke avond aan vanaf ongeveer 17.00 uur. De tijden voor 2026 zijn nog niet gepubliceerd.</p></details>
+<details><summary>Waar slapen in de buurt van Locorotondo met Kerst?</summary><p>Op het platteland tussen Martina Franca en Locorotondo zijn trulli te huur, zoals Trullo Rosy: een hele trullo met drie slaapkamers, open haard en parkeerplaats.</p></details>
+""",
+            faq=[
+                ("Wanneer begint de verlichting in Locorotondo in 2026?", "De gemeente heeft de periode van 22 november 2026 tot 6 januari 2027 gepland. De exacte datum van het aangaan is nog niet bekendgemaakt."),
+                ("Is de verlichting aan op 8 december?", "Ja: 8 december valt binnen de door de gemeente geplande periode, en de afgelopen jaren was de verlichting al vanaf eind november aan."),
+                ("Hoe laat gaat de verlichting aan?", "In 2025 ging de verlichting elke avond aan vanaf ongeveer 17.00 uur. De tijden voor 2026 zijn nog niet gepubliceerd."),
+                ("Waar slapen in de buurt van Locorotondo met Kerst?", "Op het platteland tussen Martina Franca en Locorotondo zijn trulli te huur, zoals Trullo Rosy: een hele trullo met drie slaapkamers, open haard en parkeerplaats."),
+            ],
+            cta_h2="Slaap in een trullo vlak bij de lichtjes",
+            sources_h2="Bronnen",
+            photos_h2="Foto's",
+            updated="Bijgewerkt op 13 november 2026",
+        ),
+        "es": dict(
+            title="Navidad en Locorotondo 2026: luces y fechas",
+            desc="Navidad y el puente de la Inmaculada en Locorotondo, Apulia: cuándo se encienden las luces, dónde verlas, mercadillos y dónde dormir en un trullo.",
+            h1="Navidad en Locorotondo: luces, 8 de diciembre y mercadillos",
+            answer="En Navidad el casco antiguo de Locorotondo se llena de luces entre sus callejuelas blancas y sus casas de tejado puntiagudo. Para 2026 el Ayuntamiento ha previsto un programa del 22 de noviembre de 2026 al 6 de enero de 2027, así que el puente de la Inmaculada (8 de diciembre) cae en plena temporada de luces. El programa oficial con horarios aún no se ha publicado: actualizaremos esta página en cuanto salga.",
+            body="""
+<h2>¿Cuándo se encienden las luces de Navidad de Locorotondo en 2026?</h2>
+<p>En su aviso del 7 de septiembre de 2026, el Ayuntamiento de Locorotondo previó las actividades de Navidad <strong>aproximadamente del 22 de noviembre de 2026 al 6 de enero de 2027</strong>. El 5 de noviembre de 2026 el Ayuntamiento abrió la búsqueda de patrocinadores para las <strong>«Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio»</strong> (solicitudes hasta el 16 de noviembre): el tema de 2026 es, por tanto, Pinocho. A 13 de noviembre de 2026 todavía no se han anunciado la fecha exacta del encendido, los horarios ni el recorrido.</p>
+<p>En los últimos años las luces se han encendido en la segunda mitad de noviembre y han durado hasta los primeros días de enero.</p>
+<table class="facts">
+<thead><tr><th scope="col">Año</th><th scope="col">Encendido</th><th scope="col">Hasta</th></tr></thead>
+<tbody>
+<tr><th scope="row">2024</th><td>14 de noviembre</td><td>principios de enero</td></tr>
+<tr><th scope="row">2025</th><td>22 de noviembre</td><td>primera semana de enero de 2026</td></tr>
+<tr><th scope="row">2026</th><td>programa previsto desde el 22 de noviembre (fecha por confirmar)</td><td>6 de enero de 2027</td></tr>
+</tbody>
+</table>
+{{img:locorotondo/vicolo-luci|Una callejuela del casco antiguo de Locorotondo con luces colgadas}}
+
+<h2>¿Por qué ir a Locorotondo el 8 de diciembre?</h2>
+<p>El 8 de diciembre, fiesta de la Inmaculada, y el puente que lo acompaña son el momento en que todas las luces están encendidas y los mercadillos de Navidad abiertos. El casco antiguo es pequeño y se recorre a pie: al atardecer, cuando las luces se encienden sobre las fachadas blancas, es el mejor momento para pasear.</p>
+<p>El resto del valle de Itria celebra en las mismas fechas: Martina Franca, Alberobello y Cisternino están muy cerca, y en un día se pueden ver dos.</p>
+
+<h2>¿Dónde están las luces en el casco antiguo?</h2>
+<p>En 2025 el recorrido de las luces salía de la <strong>piazza Aldo Moro</strong> y atravesaba <strong>via Porta Nuova, via Morelli, via Montanaro, via Bruno y via Eroi Dogali</strong>, con las luces encendidas cada tarde desde las 17:00 aproximadamente. El recorrido de 2026 aún no se ha anunciado.</p>
+{{img:locorotondo/via-morelli|Via Morelli, en el casco antiguo de Locorotondo}}
+<p>Por el camino merece una parada la <strong>iglesia madre de San Jorge Mártir</strong> (Chiesa Madre di San Giorgio Martire), con su gran cúpula, y el mirador del jardín público (villa comunale), que da a la campiña de los trulli.</p>
+{{img:locorotondo/san-giorgio|El interior de la iglesia madre de San Jorge en Locorotondo}}
+
+<h2>¿Hay mercadillos de Navidad?</h2>
+<p>Sí. En 2025 los mercadillos estuvieron abiertos <strong>del 30 de noviembre de 2025 al 6 de enero de 2026</strong> en la piazza Aldo Moro, en el jardín público y en las calles cercanas al Ayuntamiento. Las fechas de 2026 aún no son oficiales.</p>
+
+<h2>¿Cómo organizar la visita?</h2>
+<ul>
+<li><strong>Cuándo:</strong> llega a última hora de la tarde para ver el pueblo con luz de día y después con las luces encendidas.</li>
+<li><strong>Los fines de semana</strong> y en el puente de la Inmaculada hay mucha gente: si puedes, elige un día laborable.</li>
+<li><strong>Ropa:</strong> por la noche hace frío en las colinas y las calles del centro son de piedra.</li>
+<li><strong>Dónde dormir:</strong> Locorotondo linda con Martina Franca. Dormir en un trullo en el campo, como <a href="/es/el-trullo/">Trullo Rosy</a>, te permite recorrer los pueblos del valle de Itria y volver por la noche a la tranquilidad, frente a la chimenea.</li>
+</ul>
+{{img:locorotondo/trulli-campagna|La campiña de los trulli vista desde el jardín público de Locorotondo}}
+
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Cuándo empiezan las luces de Locorotondo en 2026?</summary><p>El Ayuntamiento ha previsto el periodo del 22 de noviembre de 2026 al 6 de enero de 2027. La fecha exacta del encendido aún no se ha anunciado.</p></details>
+<details><summary>¿Están encendidas las luces el 8 de diciembre?</summary><p>Sí: el 8 de diciembre cae dentro del periodo previsto por el Ayuntamiento, y en los últimos años las luces ya estaban encendidas desde finales de noviembre.</p></details>
+<details><summary>¿A qué hora se encienden las luces?</summary><p>En 2025 las luces se encendían cada tarde desde las 17:00 aproximadamente. Los horarios de 2026 aún no se han publicado.</p></details>
+<details><summary>¿Dónde dormir cerca de Locorotondo en Navidad?</summary><p>En el campo entre Martina Franca y Locorotondo hay trulli en alquiler, como Trullo Rosy: un trullo entero con tres dormitorios, chimenea y aparcamiento.</p></details>
+""",
+            faq=[
+                ("¿Cuándo empiezan las luces de Locorotondo en 2026?", "El Ayuntamiento ha previsto el periodo del 22 de noviembre de 2026 al 6 de enero de 2027. La fecha exacta del encendido aún no se ha anunciado."),
+                ("¿Están encendidas las luces el 8 de diciembre?", "Sí: el 8 de diciembre cae dentro del periodo previsto por el Ayuntamiento, y en los últimos años las luces ya estaban encendidas desde finales de noviembre."),
+                ("¿A qué hora se encienden las luces?", "En 2025 las luces se encendían cada tarde desde las 17:00 aproximadamente. Los horarios de 2026 aún no se han publicado."),
+                ("¿Dónde dormir cerca de Locorotondo en Navidad?", "En el campo entre Martina Franca y Locorotondo hay trulli en alquiler, como Trullo Rosy: un trullo entero con tres dormitorios, chimenea y aparcamiento."),
+            ],
+            cta_h2="Duerme en un trullo cerca de las luces",
+            sources_h2="Fuentes",
+            photos_h2="Fotos",
+            updated="Actualizado el 13 de noviembre de 2026",
         ),
     },
 ]
