@@ -24,9 +24,9 @@ GUIDES = [
              "https://www.regionepuglia.org/natale-locorotondo/"),
         ],
         "it": dict(
-            title="Luminarie e mercatini di Natale a Locorotondo 2026",
-            desc="Natale e ponte dell'Immacolata a Locorotondo: quando si accendono le luminarie, dove vederle, mercatini e consigli per dormire vicino, in un trullo.",
-            h1="Natale a Locorotondo: luminarie, Immacolata e mercatini",
+            title="Mercatini di Natale a Locorotondo 2026 e luminarie",
+            desc="Mercatini di Natale e luminarie a Locorotondo 2026: periodo indicato dal Comune, dove vederli, il ponte dell'Immacolata e dove dormire in un trullo.",
+            h1="Mercatini e luminarie di Natale a Locorotondo 2026",
             answer="A Natale il centro storico di Locorotondo si riempie di luminarie e, come nel 2025, dei mercatini di Natale, tra i vicoli bianchi e le case con i tetti a punta. Per il 2026 il Comune ha indicato un programma dal 22 novembre 2026 al 6 gennaio 2027, quindi il ponte dell'Immacolata (8 dicembre) cade in pieno periodo di luci. Date dei mercatini e orari ufficiali non sono ancora usciti: aggiorneremo questa pagina appena il Comune li pubblica.",
             body="""
 <h2>Quando si accendono le luminarie di Locorotondo nel 2026?</h2>
@@ -52,8 +52,9 @@ GUIDES = [
 <p>Lungo la strada vale una sosta la <strong>Chiesa Madre di San Giorgio Martire</strong>, con la sua grande cupola, e il belvedere della villa comunale, che guarda sulla campagna dei trulli.</p>
 {{img:locorotondo/san-giorgio|L'interno della Chiesa Madre di San Giorgio a Locorotondo}}
 
-<h2>Ci sono i mercatini di Natale?</h2>
-<p>Sì. Nel 2025 i mercatini sono stati aperti <strong>dal 30 novembre 2025 al 6 gennaio 2026</strong> in piazza Aldo Moro, nella villa comunale e nelle vie vicino al Municipio. Le date del 2026 non sono ancora ufficiali.</p>
+<h2>Quando ci sono i mercatini di Natale a Locorotondo nel 2026?</h2>
+<p>Ad oggi (13 novembre 2026) il Comune non ha ancora pubblicato le date dei mercatini di Natale 2026: il periodo indicato per tutte le iniziative di Natale va dal 22 novembre 2026 al 6 gennaio 2027. Aggiorneremo questa pagina appena escono le date ufficiali.</p>
+<p>Nel 2025 i mercatini sono stati aperti <strong>dal 30 novembre 2025 al 6 gennaio 2026</strong> in piazza Aldo Moro, nella villa comunale e nelle vie vicino al Municipio.</p>
 
 <h2>Come organizzare la visita</h2>
 <ul>
@@ -66,12 +67,14 @@ GUIDES = [
 
 <h2>Domande frequenti</h2>
 <details><summary>Quando iniziano le luminarie di Locorotondo nel 2026?</summary><p>Il Comune ha indicato il periodo dal 22 novembre 2026 al 6 gennaio 2027. La data esatta dell'accensione non è ancora stata annunciata.</p></details>
+<details><summary>Quando aprono i mercatini di Natale di Locorotondo nel 2026?</summary><p>Le date ufficiali non sono ancora uscite. Il Comune ha indicato per le iniziative di Natale il periodo dal 22 novembre 2026 al 6 gennaio 2027; nel 2025 i mercatini sono stati aperti dal 30 novembre al 6 gennaio.</p></details>
 <details><summary>Le luci sono accese all'Immacolata?</summary><p>Sì: l'8 dicembre cade dentro il periodo indicato dal Comune, e negli ultimi anni le luci erano già accese da fine novembre.</p></details>
 <details><summary>A che ora si accendono le luci?</summary><p>Nel 2025 le luci si accendevano ogni sera dalle 17 circa. Gli orari del 2026 non sono ancora stati pubblicati.</p></details>
 <details><summary>Dove dormire vicino a Locorotondo a Natale?</summary><p>Nella campagna tra Martina Franca e Locorotondo ci sono trulli in affitto, come Trullo Rosy: un trullo intero con tre camere, camino e parcheggio.</p></details>
 """,
             faq=[
                 ("Quando iniziano le luminarie di Locorotondo nel 2026?", "Il Comune ha indicato il periodo dal 22 novembre 2026 al 6 gennaio 2027. La data esatta dell'accensione non è ancora stata annunciata."),
+                ("Quando aprono i mercatini di Natale di Locorotondo nel 2026?", "Le date ufficiali non sono ancora uscite. Il Comune ha indicato per le iniziative di Natale il periodo dal 22 novembre 2026 al 6 gennaio 2027; nel 2025 i mercatini sono stati aperti dal 30 novembre al 6 gennaio."),
                 ("Le luci sono accese all'Immacolata?", "Sì: l'8 dicembre cade dentro il periodo indicato dal Comune, e negli ultimi anni le luci erano già accese da fine novembre."),
                 ("A che ora si accendono le luci?", "Nel 2025 le luci si accendevano ogni sera dalle 17 circa. Gli orari del 2026 non sono ancora stati pubblicati."),
                 ("Dove dormire vicino a Locorotondo a Natale?", "Nella campagna tra Martina Franca e Locorotondo ci sono trulli in affitto, come Trullo Rosy: un trullo intero con tre camere, camino e parcheggio."),
@@ -82,7 +85,7 @@ GUIDES = [
             updated="Aggiornato il 13 novembre 2026",
         ),
         "en": dict(
-            title="Christmas in Locorotondo 2026: lights and dates",
+            title="Christmas markets in Locorotondo 2026: lights, dates",
             desc="Christmas and the Immaculate Conception holiday in Locorotondo, Puglia: when the lights go on, where to see them, markets, and where to stay in a trullo.",
             h1="Christmas in Locorotondo: lights, 8 December and markets",
             answer="At Christmas the old town of Locorotondo fills with lights strung across its white lanes and pointed-roof houses. For 2026 the town council has planned events from 22 November 2026 to 6 January 2027, so the Immaculate Conception holiday (8 December) falls right in the middle. The official programme with times has not been published yet: we will update this page as soon as it is.",
