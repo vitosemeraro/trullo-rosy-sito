@@ -1,0 +1,32 @@
+# Genera il sito e lo pubblica su Firebase Hosting (progetto trullo-rosy) a ogni push su main.
+# Finché il secret FIREBASE_SERVICE_ACCOUNT_TRULLO_ROSY non c'è, genera e controlla il sito senza pubblicarlo.
+name: Pubblica sito (Firebase Hosting)
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: firebase
+  cancel-in-progress: false
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    env:
+      HAS_FIREBASE: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRULLO_ROSY != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pillow
+      - run: python build.py && python check_links.py
+      - name: Secret mancante
+        if: env.HAS_FIREBASE != 'true'
+        run: echo "::warning::Manca FIREBASE_SERVICE_ACCOUNT_TRULLO_ROSY: sito generato ma non pubblicato su Firebase."
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        if: env.HAS_FIREBASE == 'true'
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_TRULLO_ROSY }}
+          projectId: trullo-rosy
+          channelId: live
