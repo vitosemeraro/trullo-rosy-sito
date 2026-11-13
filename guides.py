@@ -8,6 +8,7 @@ GUIDES = [
     {
         "key": "natale-locorotondo",
         "date": "2026-11-10",
+        "modified": "2026-11-13",
         "hero": "locorotondo/tramonto",
         "paths": {"it": "/guide/natale-a-locorotondo/", "en": "/en/guides/christmas-in-locorotondo/"},
         "sources": [
@@ -15,6 +16,8 @@ GUIDES = [
              "https://www.comune.locorotondo.ba.it/it/news/natale-a-locorotondo-2026-avviso-pubblico-per-la-presentazione-di-proposte-progettuali"),
             ("Agorà Blog, \"Natale 2026 a Locorotondo: all'avviso pubblico giungono 6 proposte\" (2 ottobre 2026)",
              "https://agorablog.it/ultime-news/natale-2026-a-locorotondo-allavviso-pubblico-giungono-6-proposte/"),
+            ("Comune di Locorotondo, avviso sponsorizzazione \"Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio\" (5 novembre 2026)",
+             "https://www.comune.locorotondo.ba.it/it/news"),
             ("regionepuglia.org, \"Natale a Locorotondo\" (aggiornato al 10 novembre 2026)",
              "https://www.regionepuglia.org/natale-locorotondo/"),
         ],
@@ -25,7 +28,7 @@ GUIDES = [
             answer="A Natale il centro storico di Locorotondo si riempie di luminarie e, come nel 2025, dei mercatini di Natale, tra i vicoli bianchi e le case con i tetti a punta. Per il 2026 il Comune ha indicato un programma dal 22 novembre 2026 al 6 gennaio 2027, quindi il ponte dell'Immacolata (8 dicembre) cade in pieno periodo di luci. Date dei mercatini e orari ufficiali non sono ancora usciti: aggiorneremo questa pagina appena il Comune li pubblica.",
             body="""
 <h2>Quando si accendono le luminarie di Locorotondo nel 2026?</h2>
-<p>Il Comune di Locorotondo, con l'avviso pubblicato il 7 settembre 2026, ha previsto le iniziative di Natale <strong>indicativamente dal 22 novembre 2026 al 6 gennaio 2027</strong>. Ad oggi (10 novembre 2026) la data esatta dell'accensione non è stata annunciata: al bando hanno risposto sei proposte e la scelta del progetto è ancora in corso.</p>
+<p>Il Comune di Locorotondo, con l'avviso pubblicato il 7 settembre 2026, ha previsto le iniziative di Natale <strong>indicativamente dal 22 novembre 2026 al 6 gennaio 2027</strong>. Il 5 novembre 2026 il Comune ha aperto la ricerca di sponsor per le <strong>"Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio"</strong> (domande fino al 16 novembre): il tema dell'edizione 2026 è quindi Pinocchio. Ad oggi (13 novembre 2026) la data esatta dell'accensione, gli orari e il percorso non sono ancora stati annunciati.</p>
 <p>Negli ultimi anni le luci si sono accese nella seconda metà di novembre e sono rimaste fino ai primi giorni di gennaio.</p>
 <table class="facts">
 <thead><tr><th scope="col">Anno</th><th scope="col">Accensione</th><th scope="col">Fino a</th></tr></thead>
@@ -74,7 +77,7 @@ GUIDES = [
             cta_h2="Dormi in un trullo a pochi passi dalle luci",
             sources_h2="Fonti",
             photos_h2="Foto",
-            updated="Aggiornato il 10 novembre 2026",
+            updated="Aggiornato il 13 novembre 2026",
         ),
         "en": dict(
             title="Christmas in Locorotondo 2026: lights and dates",
@@ -83,7 +86,7 @@ GUIDES = [
             answer="At Christmas the old town of Locorotondo fills with lights strung across its white lanes and pointed-roof houses. For 2026 the town council has planned events from 22 November 2026 to 6 January 2027, so the Immaculate Conception holiday (8 December) falls right in the middle. The official programme with times has not been published yet: we will update this page as soon as it is.",
             body="""
 <h2>When do the Locorotondo Christmas lights go on in 2026?</h2>
-<p>In its notice of 7 September 2026, the Comune di Locorotondo planned the Christmas programme <strong>from about 22 November 2026 to 6 January 2027</strong>. As of 10 November 2026 the exact switch-on date has not been announced: six proposals were submitted and the project is still being chosen.</p>
+<p>In its notice of 7 September 2026, the Comune di Locorotondo planned the Christmas programme <strong>from about 22 November 2026 to 6 January 2027</strong>. On 5 November 2026 the Comune opened a call for sponsors of <strong>"Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio"</strong> (applications until 16 November), so this year's theme is Pinocchio. As of 13 November 2026 the exact switch-on date, times and route have not been announced yet.</p>
 <p>In recent years the lights have gone on in the second half of November and stayed until early January.</p>
 <table class="facts">
 <thead><tr><th scope="col">Year</th><th scope="col">Switch-on</th><th scope="col">Until</th></tr></thead>
@@ -132,7 +135,7 @@ GUIDES = [
             cta_h2="Stay in a trullo close to the lights",
             sources_h2="Sources",
             photos_h2="Photos",
-            updated="Updated 10 November 2026",
+            updated="Updated 13 November 2026",
         ),
     },
 ]

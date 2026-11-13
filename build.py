@@ -474,7 +474,7 @@ def guide(g, lang):
     hero_c = cred.get(g["hero"])
     url = SITE + g["paths"][lang]
     art = {"@context": "https://schema.org", "@type": "Article", "headline": p["h1"], "description": p["desc"],
-           "datePublished": g["date"], "dateModified": g["date"], "inLanguage": lang, "mainEntityOfPage": url,
+           "datePublished": g["date"], "dateModified": g.get("modified", g["date"]), "inLanguage": lang, "mainEntityOfPage": url,
            "image": f"{SITE}/img/{g['hero']}.webp", "author": {"@type": "Organization", "name": "Trullo Rosy", "url": SITE},
            "publisher": {"@type": "Organization", "name": "Trullo Rosy", "logo": f"{SITE}/img/logo.png"}}
     faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -535,7 +535,7 @@ def sitemap():
         ps = g["paths"]
         alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{SITE}{p}"/>' for l, p in ps.items())
         for l, p in ps.items():
-            out.append(f"<url><loc>{SITE}{p}</loc><lastmod>{g['date']}</lastmod>{alts}</url>")
+            out.append(f"<url><loc>{SITE}{p}</loc><lastmod>{g.get('modified', g['date'])}</lastmod>{alts}</url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(out) + "\n</urlset>\n")
