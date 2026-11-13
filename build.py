@@ -492,6 +492,10 @@ def guide(g, lang):
 </section>
 <article class="wrap guide">
   <p class="answer-box">{e(p['answer'])}</p>
+  <aside class="book-box" aria-label="{e(p['cta_h2'])}">
+    <p class="book-box-t">{e(p['cta_h2'])}</p>
+    {book_buttons(t)}
+  </aside>
   {body_html}
   <section class="final">
     <h2>{e(p['cta_h2'])}</h2>
