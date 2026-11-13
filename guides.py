@@ -19,10 +19,10 @@ GUIDES = [
              "https://www.regionepuglia.org/natale-locorotondo/"),
         ],
         "it": dict(
-            title="Natale a Locorotondo 2026: luminarie e Immacolata",
+            title="Luminarie e mercatini di Natale a Locorotondo 2026",
             desc="Natale e ponte dell'Immacolata a Locorotondo: quando si accendono le luminarie, dove vederle, mercatini e consigli per dormire vicino, in un trullo.",
             h1="Natale a Locorotondo: luminarie, Immacolata e mercatini",
-            answer="A Natale il centro storico di Locorotondo si riempie di luminarie, tra i vicoli bianchi e le case con i tetti a punta. Per il 2026 il Comune ha indicato un programma dal 22 novembre 2026 al 6 gennaio 2027, quindi il ponte dell'Immacolata (8 dicembre) cade in pieno periodo di luci. Il programma ufficiale con gli orari non è ancora uscito: aggiorneremo questa pagina appena il Comune lo pubblica.",
+            answer="A Natale il centro storico di Locorotondo si riempie di luminarie e, come nel 2025, dei mercatini di Natale, tra i vicoli bianchi e le case con i tetti a punta. Per il 2026 il Comune ha indicato un programma dal 22 novembre 2026 al 6 gennaio 2027, quindi il ponte dell'Immacolata (8 dicembre) cade in pieno periodo di luci. Date dei mercatini e orari ufficiali non sono ancora usciti: aggiorneremo questa pagina appena il Comune li pubblica.",
             body="""
 <h2>Quando si accendono le luminarie di Locorotondo nel 2026?</h2>
 <p>Il Comune di Locorotondo, con l'avviso pubblicato il 7 settembre 2026, ha previsto le iniziative di Natale <strong>indicativamente dal 22 novembre 2026 al 6 gennaio 2027</strong>. Ad oggi (10 novembre 2026) la data esatta dell'accensione non è stata annunciata: al bando hanno risposto sei proposte e la scelta del progetto è ancora in corso.</p>
