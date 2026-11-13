@@ -29,6 +29,11 @@ WHATSAPP = "https://wa.me/393290614613"
 AIRBNB = "https://www.airbnb.com/rooms/2627341"
 BOOKING = "https://www.booking.com/hotel/it/trullo-rosy.it.html"
 ADDR = {"street": "SP70", "zip": "74015", "city": "Martina Franca", "prov": "TA"}
+# Dati della struttura (13/11/2026): CIN dalla mail DMS Puglia, orari e ospiti dall'annuncio Airbnb, pin da Google Maps
+CIN = "IT073013C200100400"
+CHECKIN, CHECKOUT = "15:00", "11:00"
+OSPITI_MAX = 6
+GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
 ASSET_VER = "2"
 
@@ -148,6 +153,7 @@ def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=
       <p class="foot-brand">Trullo Rosy</p>
       <p>{e(t['footer_tag'])}</p>
       <p>{ADDR['street']}, {ADDR['zip']} {ADDR['city']} ({ADDR['prov']}), {e(t['country'])}</p>
+      <p>CIN {CIN}</p>
     </div>
     <div>
       <p><a href="tel:{PHONE_VITO}">{PHONE_VITO_TXT}</a> (Vito)<br><a href="tel:{PHONE_ERICA}">{PHONE_ERICA_TXT}</a> (Erica)</p>
@@ -191,10 +197,14 @@ def rental_schema(lang):
             "numberOfRooms": 3,
             "numberOfBedrooms": 3,
             "floorSize": {"@type": "QuantitativeValue", "value": 85, "unitCode": "MTK"},
-            "occupancy": {"@type": "QuantitativeValue", "maxValue": 7},
+            "occupancy": {"@type": "QuantitativeValue", "maxValue": OSPITI_MAX},
             "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": a, "value": True}
                                for _, items in t["amenities"] for a in items],
         },
+        "geo": {"@type": "GeoCoordinates", "latitude": GEO["lat"], "longitude": GEO["lng"]},
+        "checkinTime": CHECKIN + ":00",
+        "checkoutTime": CHECKOUT + ":00",
+        "identifier": {"@type": "PropertyValue", "propertyID": "CIN", "value": CIN},
         "sameAs": [AIRBNB, BOOKING],
     }
 
@@ -531,7 +541,7 @@ def llms():
     lines = [
         "# Trullo Rosy", "",
         "> Trullo tradizionale in affitto (intera casa) nelle campagne di Martina Franca (TA), Valle d'Itria, Puglia. "
-        "85 m², 3 camere (2 letti queen size, 1 letto singolo), fino a 5 adulti e 2 bambini, cucina attrezzata, Wi-Fi, "
+        "85 m², 3 camere (2 letti queen size, 1 letto singolo), fino a 6 ospiti, check-in dalle 15:00 e check-out entro le 11:00, CIN IT073013C200100400, cucina attrezzata, Wi-Fi, "
         "parcheggio gratuito, giardino con uliveto, amaca e barbecue. Indirizzo: SP70, 74015 Martina Franca (TA). "
         "Prenotazioni: Airbnb, Booking.com, WhatsApp +39 329 06 14 613.", "",
     ]
