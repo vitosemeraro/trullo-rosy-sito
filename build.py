@@ -35,7 +35,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "3"
+ASSET_VER = "4"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -118,6 +118,7 @@ def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/consent.js?v={ASSET_VER}" data-ga="{GA4}" data-lang="{lang}" data-policy="{PATHS['privacy'][lang]}" data-legacy="tr_consent" data-accent="#3c5229"></script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 {robots}
@@ -158,23 +159,11 @@ def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=
     <div>
       <p><a href="tel:{PHONE_VITO}">{PHONE_VITO_TXT}</a> (Vito)<br><a href="tel:{PHONE_ERICA}">{PHONE_ERICA_TXT}</a> (Erica)</p>
       <p><a href="{WHATSAPP}" rel="noopener" target="_blank">WhatsApp</a> · <a href="{AIRBNB}" rel="noopener" target="_blank">Airbnb</a> · <a href="{BOOKING}" rel="noopener" target="_blank">Booking.com</a></p>
-      <p><a href="{PATHS['privacy'][lang]}">{e(t['privacy'])}</a></p>
+      <p><a href="{PATHS['privacy'][lang]}">{e(t['privacy'])}</a> · <a href="{PATHS['privacy'][lang]}" data-cc-open>Cookie</a></p>
     </div>
   </div>
   <p class="wrap copy">© {date.today().year} Trullo Rosy</p>
 </footer>
-<div class="cookie" id="cookie" hidden>
-  <p>{e(t['cookie_text'])} <a href="{PATHS['privacy'][lang]}">{e(t['privacy'])}</a></p>
-  <button type="button" class="btn btn-small" data-consent="granted">{e(t['cookie_yes'])}</button>
-  <button type="button" class="linkbtn" data-cookie-settings aria-expanded="false">{e(t['cookie_set'])}</button>
-  <div class="cookie-panel" hidden>
-    <label><input type="checkbox" checked disabled> {e(t['cookie_nec'])}</label>
-    <label><input type="checkbox" data-cookie-stat> {e(t['cookie_stat'])}</label>
-    <button type="button" class="btn btn-small btn-ghost" data-cookie-save>{e(t['cookie_save'])}</button>
-  </div>
-  <button type="button" class="cookie-x" data-consent="denied" aria-label="{e(t['cookie_close'])}" title="{e(t['cookie_close'])}">&times;</button>
-</div>
-<script>window.GA4="{GA4}";</script>
 <script src="/assets/site.js?v={ASSET_VER}" defer></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "{CF_TOKEN}"}}'></script>
 </body>
@@ -414,7 +403,7 @@ def privacy(lang):
   <p>{e(p['p1'])}</p>
   <h2>{e(p['stats_h2'])}</h2>
   <p>{e(p['cf'])}</p>
-  <p>{e(p['ga'])} <button type="button" class="linkbtn" data-reset-consent>{e(p['reset'])}</button></p>
+  <p>{e(p['ga'])} <button type="button" class="linkbtn" data-cc-open>{e(p['reset'])}</button></p>
   <h2>{e(p['book_h2'])}</h2>
   <p>{e(p['book_p'])}</p>
   <h2>{e(p['contact_h2'])}</h2>
