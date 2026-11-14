@@ -16,8 +16,9 @@ from content import C, DEFAULT, GALLERY_IMAGES, LANGS, PATHS, PLACES
 from guides import GUIDES
 from guides_valle import GUIDES as GUIDES_VALLE
 from guides_eventi import GUIDES as GUIDES_EVENTI
+from guides_cibo import GUIDES as GUIDES_CIBO
 
-GUIDES = GUIDES + GUIDES_VALLE + GUIDES_EVENTI
+GUIDES = GUIDES + GUIDES_VALLE + GUIDES_EVENTI + GUIDES_CIBO
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
