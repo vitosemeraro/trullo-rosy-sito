@@ -288,4 +288,10 @@ main>section.final{margin-bottom:0}
 .df-day.sel{background:var(--green);color:#fff}
 @media (max-width:600px){.df-months{grid-template-columns:1fr}}
 
-/* ================= Grafica curata (14/11/2026) ==========
+/* ================= Grafica curata (14/11/2026) ==========/* Condizioni prenotazione diretta (14/11/2026) */
+.perks{font-size:.9rem;font-weight:600;margin:.2em 0 .3em}
+.hero .perks{color:#fff}
+.stay-box .perks{color:var(--green-d);margin:.3em 0}
+.perks-list{list-style:none;padding:0;margin:.4em 0 .9em;display:flex;flex-wrap:wrap;gap:6px}
+.perks-list li{background:#e9efe2;color:var(--green-d);border-radius:999px;padding:.3em .8em;font-size:.88rem;font-weight:600}
+.perks-list li::before{content:"✓ "}

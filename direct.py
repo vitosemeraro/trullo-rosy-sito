@@ -2,14 +2,15 @@
 
 Il modulo non invia nulla al sito: prepara un messaggio WhatsApp o un'email a hello@trullo-rosy.it
 con date e ospiti già scritti. Airbnb e Booking.com restano come link secondari ("anche su…").
-Finché Vito non decide sconto e condizioni per chi prenota diretto, il modulo chiede la disponibilità:
-non promettere prezzi, sconti o condizioni che non ci sono.
+Condizioni decise da Vito il 14/11/2026 (perks): 15% in meno rispetto a Booking.com, nessuna caparra,
+pagamento all'arrivo, cancellazione gratuita. Non promettere altro.
 
 Segnaposti nei messaggi: {ci} arrivo, {co} partenza, {n} ospiti, {nome}, {msg}.
 """
 
 D = {
     "it": dict(
+        perks=['15% in meno rispetto a Booking.com', 'nessuna caparra', "paghi all'arrivo", 'cancellazione gratuita'],
         cal_h="Date libere", cal_free="libero", cal_busy="occupato", cal_hint="Tocca il giorno di arrivo e poi quello di partenza.",
         busy_err="In quelle date il trullo risulta già occupato: scegli altre date nel calendario.",
         cta="Prenota direttamente",
@@ -28,6 +29,7 @@ D = {
         privacy="Il modulo di prenotazione non invia dati a questo sito: prepara solo un messaggio WhatsApp o un'email che decidi tu se inviare.",
     ),
     "en": dict(
+        perks=['15% less than on Booking.com', 'no deposit', 'pay on arrival', 'free cancellation'],
         cal_h="Available dates", cal_free="free", cal_busy="booked", cal_hint="Tap your check-in day, then your check-out day.",
         busy_err="The trullo is already booked on some of those nights: please pick other dates in the calendar.",
         cta="Book direct",
@@ -46,6 +48,7 @@ D = {
         privacy="The booking form sends no data to this site: it only prepares a WhatsApp message or an email that you choose whether to send.",
     ),
     "fr": dict(
+        perks=['15 % moins cher que sur Booking.com', "pas d'acompte", "paiement à l'arrivée", 'annulation gratuite'],
         cal_h="Dates disponibles", cal_free="libre", cal_busy="occupé", cal_hint="Touchez le jour d'arrivée, puis celui du départ.",
         busy_err="Le trullo est déjà occupé à ces dates : choisissez d'autres dates dans le calendrier.",
         cta="Réserver en direct",
@@ -64,6 +67,7 @@ D = {
         privacy="Le formulaire de réservation n'envoie aucune donnée à ce site : il prépare seulement un message WhatsApp ou un e-mail que vous choisissez d'envoyer.",
     ),
     "de": dict(
+        perks=['15 % günstiger als bei Booking.com', 'keine Anzahlung', 'Zahlung bei Ankunft', 'kostenlose Stornierung'],
         cal_h="Freie Termine", cal_free="frei", cal_busy="belegt", cal_hint="Tippe auf den Anreisetag und dann auf den Abreisetag.",
         busy_err="Der Trullo ist an diesen Daten schon belegt: Bitte wähle andere Daten im Kalender.",
         cta="Direkt buchen",
@@ -82,6 +86,7 @@ D = {
         privacy="Das Buchungsformular sendet keine Daten an diese Website: es bereitet nur eine WhatsApp-Nachricht oder E-Mail vor, die du selbst abschickst.",
     ),
     "nl": dict(
+        perks=['15% goedkoper dan via Booking.com', 'geen aanbetaling', 'betalen bij aankomst', 'gratis annuleren'],
         cal_h="Vrije data", cal_free="vrij", cal_busy="bezet", cal_hint="Tik op je aankomstdag en daarna op je vertrekdag.",
         busy_err="De trullo is op die data al bezet: kies andere data in de kalender.",
         cta="Direct boeken",
@@ -100,6 +105,7 @@ D = {
         privacy="Het boekingsformulier stuurt geen gegevens naar deze site: het maakt alleen een WhatsApp-bericht of e-mail klaar die je zelf verstuurt.",
     ),
     "es": dict(
+        perks=['15 % menos que en Booking.com', 'sin depósito', 'pagas a la llegada', 'cancelación gratuita'],
         cal_h="Fechas libres", cal_free="libre", cal_busy="ocupado", cal_hint="Toca el día de llegada y luego el de salida.",
         busy_err="El trullo ya está ocupado en esas fechas: elige otras fechas en el calendario.",
         cta="Reserva directa",

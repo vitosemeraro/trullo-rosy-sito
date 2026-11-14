@@ -44,7 +44,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "9"
+ASSET_VER = "10"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -112,8 +112,13 @@ def book_buttons(lang, target=None):
         '<div class="cta">'
         f'<a class="btn btn-direct" href="{href}" data-ev="prenota_diretto">{e(d["cta"])}</a>'
         f'<a class="btn btn-wa" href="{wa_link(d["wa_text"])}" rel="noopener" target="_blank">{e(C[lang]["whatsapp"])}</a>'
-        "</div>" + also_links(lang)
+        "</div>" + perks_line(lang) + also_links(lang)
     )
+
+
+def perks_line(lang):
+    """Condizioni per chi prenota diretto (decise da Vito il 14/11/2026)."""
+    return '<p class="perks">' + " · ".join(f"✓ {e(x)}" for x in DIRECT[lang]["perks"]) + "</p>"
 
 
 def direct_form(lang, fid="prenota"):
@@ -126,6 +131,7 @@ def direct_form(lang, fid="prenota"):
     return f"""<form class="direct-form" id="{fid}" action="mailto:{EMAIL}" method="post" enctype="text/plain" data-wa="{WHATSAPP}" data-email="{EMAIL}" {attrs}>
     <h2>{e(d['form_h2'])}</h2>
     <p>{e(d['form_p'])}</p>
+    <ul class="perks-list">{"".join(f"<li>{e(x)}</li>" for x in d["perks"])}</ul>
     <div class="df-cal" data-avail="{AVAIL}" hidden>
       <p class="df-cal-h"><strong>{e(d['cal_h'])}</strong> <span class="df-leg"><i class="free"></i>{e(d['cal_free'])} <i class="busy"></i>{e(d['cal_busy'])}</span></p>
       <p class="df-cal-hint">{e(d['cal_hint'])}</p>
@@ -200,6 +206,7 @@ def stay_box(g, lang, title, cls="book-box"):
     <div>
       <p class="book-box-t">{e(title)}</p>
       <p class="stay-facts">{e(s['facts'])}</p>
+      {perks_line(lang)}
       {dates_html if dates_html else ''}
       {'' if dates_html else book_buttons(lang)}
       <p class="stay-more"><a href="{trullo_url}">{e(s['see'])} →</a></p>
@@ -678,7 +685,8 @@ def llms():
         "> Trullo tradizionale in affitto (intera casa) nelle campagne di Martina Franca (TA), Valle d'Itria, Puglia. "
         "85 m², 3 camere (2 letti queen size, 1 letto singolo), fino a 6 ospiti, check-in dalle 15:00 e check-out entro le 11:00, CIN IT073013C200100400, cucina attrezzata, Wi-Fi, "
         "parcheggio gratuito, giardino con uliveto, amaca e barbecue. Indirizzo: SP70, 74015 Martina Franca (TA). "
-        "Prenotazione diretta (consigliata): WhatsApp +39 329 06 14 613 o email hello@trullo-rosy.it, modulo su https://trullo-rosy.it/contatti/#prenota. Anche su Airbnb e Booking.com.", "",
+        "Prenotazione diretta (consigliata): WhatsApp +39 329 06 14 613 o email hello@trullo-rosy.it, modulo su https://trullo-rosy.it/contatti/#prenota. "
+        "Chi prenota diretto ha il 15% in meno rispetto a Booking.com, nessuna caparra, pagamento all'arrivo e cancellazione gratuita. Anche su Airbnb e Booking.com.", "",
     ]
     for l in LANGS:
         t = C[l]

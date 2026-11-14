@@ -56,7 +56,7 @@ C["it"] = dict(
         ("Quante persone può ospitare Trullo Rosy?", "Il trullo ospita fino a 6 persone. Il check-in è dalle 15:00, il check-out entro le 11:00. Ha tre camere: Silent nest e Still Bloom con letto queen size e l'Alcova con un letto singolo. Ci sono anche culla e seggiolone."),
         ("Dove si trova il trullo?", "In campagna lungo la SP70, 74015 Martina Franca (TA), in Valle d'Itria, tra uliveti secolari e alberi da frutto."),
         ("C'è il parcheggio?", "Sì, il parcheggio è gratuito e si trova dentro la proprietà."),
-        ("Come si prenota?", "Il modo migliore è prenotare direttamente con noi: scrivi date e ospiti nel modulo \"Prenota direttamente\" o su WhatsApp al +39 329 06 14 613 (o a hello@trullo-rosy.it) e ti rispondono Vito ed Erica. Il trullo è anche su Airbnb e Booking.com, dove trovi le recensioni degli ospiti."),
+        ("Come si prenota?", "Il modo migliore è prenotare direttamente con noi: scrivi date e ospiti nel modulo \"Prenota direttamente\" o su WhatsApp al +39 329 06 14 613 (o a hello@trullo-rosy.it) e ti rispondono Vito ed Erica. Prenotando diretto hai il 15% in meno rispetto a Booking.com, nessuna caparra, paghi all'arrivo e la cancellazione è gratuita. Il trullo è anche su Airbnb e Booking.com, dove trovi le recensioni degli ospiti."),
         ("Si può lavorare da remoto?", "Sì: c'è il Wi-Fi veloce e uno spazio di lavoro dedicato."),
     ],
     home=dict(
@@ -189,7 +189,7 @@ C["en"] = dict(
         ("How many guests can Trullo Rosy host?", "The trullo hosts up to 6 guests. Check-in is from 3 pm, check-out by 11 am. It has three bedrooms: Silent nest and Still Bloom with a queen-size bed, and the Alcova with a single bed. A cot and a high chair are also available."),
         ("Where is the trullo?", "In the countryside along the SP70, 74015 Martina Franca (TA), in the Itria Valley, among centuries-old olive groves and fruit trees."),
         ("Is there parking?", "Yes, free parking is available on the property."),
-        ("How do I book?", "The best way is to book directly with us: enter your dates and guests in the \"Book direct\" form or message us on WhatsApp at +39 329 06 14 613 (or hello@trullo-rosy.it), and Vito and Erica will reply. The trullo is also on Airbnb and Booking.com, where you can read guest reviews."),
+        ("How do I book?", "The best way is to book directly with us: enter your dates and guests in the \"Book direct\" form or message us on WhatsApp at +39 329 06 14 613 (or hello@trullo-rosy.it), and Vito and Erica will reply. Booking direct you get 15% less than on Booking.com, no deposit, payment on arrival and free cancellation. The trullo is also on Airbnb and Booking.com, where you can read guest reviews."),
         ("Can I work remotely?", "Yes: there is fast Wi-Fi and a dedicated workspace."),
     ],
     home=dict(
@@ -322,7 +322,7 @@ C["fr"] = dict(
         ("Combien de personnes peut accueillir Trullo Rosy ?", "Le trullo accueille jusqu'à 6 personnes. Arrivée dès 15 h, départ avant 11 h. Il compte trois chambres : Silent nest et Still Bloom avec un lit queen size, et l'Alcova avec un lit simple. Un lit bébé et une chaise haute sont aussi disponibles."),
         ("Où se trouve le trullo ?", "À la campagne, le long de la SP70, 74015 Martina Franca (TA), dans la vallée d'Itria, entre oliviers centenaires et arbres fruitiers."),
         ("Y a-t-il un parking ?", "Oui, le parking est gratuit et se trouve sur la propriété."),
-        ("Comment réserver ?", "Le mieux est de réserver directement avec nous : indiquez vos dates et le nombre de personnes dans le formulaire \"Réserver en direct\" ou sur WhatsApp au +39 329 06 14 613 (ou hello@trullo-rosy.it), Vito et Erica vous répondront. Le trullo est aussi sur Airbnb et Booking.com, où vous trouverez les avis des hôtes."),
+        ("Comment réserver ?", "Le mieux est de réserver directement avec nous : indiquez vos dates et le nombre de personnes dans le formulaire \"Réserver en direct\" ou sur WhatsApp au +39 329 06 14 613 (ou hello@trullo-rosy.it), Vito et Erica vous répondront. En direct, c'est 15 % moins cher que sur Booking.com, sans acompte, avec paiement à l'arrivée et annulation gratuite. Le trullo est aussi sur Airbnb et Booking.com, où vous trouverez les avis des hôtes."),
         ("Peut-on y télétravailler ?", "Oui : il y a le Wi-Fi rapide et un espace de travail dédié."),
     ],
     home=dict(
@@ -455,7 +455,7 @@ C["de"] = dict(
         ("Wie viele Gäste passen in den Trullo Rosy?", "Der Trullo bietet Platz für bis zu 6 Gäste. Check-in ab 15:00 Uhr, Check-out bis 11:00 Uhr. Er hat drei Schlafzimmer: Silent nest und Still Bloom mit Queen-Size-Bett und die Alcova mit Einzelbett. Babybett und Hochstuhl sind ebenfalls vorhanden."),
         ("Wo liegt der Trullo?", "Auf dem Land an der SP70, 74015 Martina Franca (TA), im Itria-Tal, zwischen jahrhundertealten Olivenbäumen und Obstbäumen."),
         ("Gibt es einen Parkplatz?", "Ja, der Parkplatz ist kostenlos und befindet sich auf dem Grundstück."),
-        ("Wie kann ich buchen?", "Am besten buchst du direkt bei uns: Trag deine Daten und die Zahl der Gäste ins Formular \"Direkt buchen\" ein oder schreib uns auf WhatsApp unter +39 329 06 14 613 (oder an hello@trullo-rosy.it), Vito und Erica antworten dir. Der Trullo ist auch auf Airbnb und Booking.com, dort findest du die Bewertungen der Gäste."),
+        ("Wie kann ich buchen?", "Am besten buchst du direkt bei uns: Trag deine Daten und die Zahl der Gäste ins Formular \"Direkt buchen\" ein oder schreib uns auf WhatsApp unter +39 329 06 14 613 (oder an hello@trullo-rosy.it), Vito und Erica antworten dir. Direkt gebucht ist es 15 % günstiger als bei Booking.com, ohne Anzahlung, du zahlst bei Ankunft und die Stornierung ist kostenlos. Der Trullo ist auch auf Airbnb und Booking.com, dort findest du die Bewertungen der Gäste."),
         ("Kann man dort remote arbeiten?", "Ja: Es gibt schnelles WLAN und einen eigenen Arbeitsplatz."),
     ],
     home=dict(
@@ -588,7 +588,7 @@ C["nl"] = dict(
         ("Hoeveel gasten kunnen in Trullo Rosy verblijven?", "De trullo biedt plaats aan maximaal 6 gasten. Inchecken vanaf 15:00, uitchecken uiterlijk 11:00. Er zijn drie slaapkamers: Silent nest en Still Bloom met een queensize bed, en de Alcova met een eenpersoonsbed. Er zijn ook een babybedje en een kinderstoel."),
         ("Waar ligt de trullo?", "Op het platteland aan de SP70, 74015 Martina Franca (TA), in de Itria-vallei, tussen eeuwenoude olijfbomen en fruitbomen."),
         ("Is er parkeergelegenheid?", "Ja, parkeren is gratis en op het eigen terrein."),
-        ("Hoe boek ik?", "Het beste is direct bij ons boeken: vul je data en het aantal gasten in bij het formulier \"Direct boeken\" of stuur ons een WhatsApp op +39 329 06 14 613 (of mail naar hello@trullo-rosy.it), dan antwoorden Vito en Erica. De trullo staat ook op Airbnb en Booking.com, waar je de reviews van gasten leest."),
+        ("Hoe boek ik?", "Het beste is direct bij ons boeken: vul je data en het aantal gasten in bij het formulier \"Direct boeken\" of stuur ons een WhatsApp op +39 329 06 14 613 (of mail naar hello@trullo-rosy.it), dan antwoorden Vito en Erica. Direct boeken is 15% goedkoper dan via Booking.com, zonder aanbetaling, je betaalt bij aankomst en annuleren is gratis. De trullo staat ook op Airbnb en Booking.com, waar je de reviews van gasten leest."),
         ("Kan ik er op afstand werken?", "Ja: er is snelle wifi en een aparte werkplek."),
     ],
     home=dict(
@@ -721,7 +721,7 @@ C["es"] = dict(
         ("¿Cuántas personas caben en Trullo Rosy?", "El trullo aloja hasta 6 personas. Entrada desde las 15:00, salida antes de las 11:00. Tiene tres dormitorios: Silent nest y Still Bloom con cama queen size, y la Alcova con cama individual. También hay cuna y trona."),
         ("¿Dónde está el trullo?", "En el campo, junto a la SP70, 74015 Martina Franca (TA), en el valle de Itria, entre olivos centenarios y árboles frutales."),
         ("¿Hay aparcamiento?", "Sí, el aparcamiento es gratuito y está dentro de la propiedad."),
-        ("¿Cómo se reserva?", "Lo mejor es reservar directamente con nosotros: escribe las fechas y los huéspedes en el formulario \"Reserva directa\" o por WhatsApp al +39 329 06 14 613 (o a hello@trullo-rosy.it) y te responderán Vito y Erica. El trullo también está en Airbnb y Booking.com, donde puedes leer las opiniones de los huéspedes."),
+        ("¿Cómo se reserva?", "Lo mejor es reservar directamente con nosotros: escribe las fechas y los huéspedes en el formulario \"Reserva directa\" o por WhatsApp al +39 329 06 14 613 (o a hello@trullo-rosy.it) y te responderán Vito y Erica. Reservando directamente pagas un 15 % menos que en Booking.com, sin depósito, pagas a la llegada y la cancelación es gratuita. El trullo también está en Airbnb y Booking.com, donde puedes leer las opiniones de los huéspedes."),
         ("¿Se puede teletrabajar?", "Sí: hay Wi-Fi rápido y una zona de trabajo propia."),
     ],
     home=dict(
