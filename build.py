@@ -33,6 +33,8 @@ PHONE_VITO, PHONE_VITO_TXT = "+393290614613", "+39 329 06 14 613"
 PHONE_ERICA, PHONE_ERICA_TXT = "+393493132669", "+39 349 31 32 669"
 EMAIL = "hello@trullo-rosy.it"
 WHATSAPP = "https://wa.me/393290614613"
+# Date occupate lette dai calendari iCal di Airbnb e Booking (worker/ev.js, /avail): i link iCal sono secret del worker
+AVAIL = "https://trullo-ev.cfdist2.workers.dev/avail"
 AIRBNB = "https://www.airbnb.com/rooms/2627341"
 BOOKING = "https://www.booking.com/hotel/it/trullo-rosy.it.html"
 ADDR = {"street": "SP70", "zip": "74015", "city": "Martina Franca", "prov": "TA"}
@@ -42,7 +44,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "7"
+ASSET_VER = "8"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -119,11 +121,16 @@ def direct_form(lang, fid="prenota"):
     Senza JavaScript il modulo apre comunque un'email a EMAIL."""
     d = DIRECT[lang]
     opts = "".join(f'<option{" selected" if i == 2 else ""}>{i}</option>' for i in range(1, OSPITI_MAX + 1))
-    data = {"tpl": d["tpl"], "sign": d["sign"], "subject": d["subject"], "err": d["err"]}
+    data = {"tpl": d["tpl"], "sign": d["sign"], "subject": d["subject"], "err": d["err"], "busy": d["busy_err"]}
     attrs = " ".join(f'data-{k}="{e(v)}"' for k, v in data.items())
     return f"""<form class="direct-form" id="{fid}" action="mailto:{EMAIL}" method="post" enctype="text/plain" data-wa="{WHATSAPP}" data-email="{EMAIL}" {attrs}>
     <h2>{e(d['form_h2'])}</h2>
     <p>{e(d['form_p'])}</p>
+    <div class="df-cal" data-avail="{AVAIL}" hidden>
+      <p class="df-cal-h"><strong>{e(d['cal_h'])}</strong> <span class="df-leg"><i class="free"></i>{e(d['cal_free'])} <i class="busy"></i>{e(d['cal_busy'])}</span></p>
+      <p class="df-cal-hint">{e(d['cal_hint'])}</p>
+      <div class="df-months"></div>
+    </div>
     <div class="df-row">
       <label>{e(d['ci'])}<input type="date" name="arrivo" required></label>
       <label>{e(d['co'])}<input type="date" name="partenza" required></label>
