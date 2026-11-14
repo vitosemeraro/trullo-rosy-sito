@@ -76,7 +76,7 @@ VALLE = {
 <li><strong>Giorno 3:</strong> Ostuni e il mare Adriatico.</li>
 <li><strong>Giorno 4:</strong> Matera, i Sassi patrimonio UNESCO dal 1993 (circa 64 km in linea d'aria).</li>
 </ul>
-<p>La sera si torna in campagna: a <a href="/il-trullo/">Trullo Rosy</a> c'è il silenzio degli ulivi e, d'inverno, il camino. Altri luoghi da visitare sono nella pagina <a href="/dintorni/">dintorni</a>.</p>
+<p>La sera si torna in campagna: a <a href="/il-trullo/">Trullo Rosy</a> c'è il silenzio degli ulivi e, d'inverno, il camino. Altri luoghi da visitare sono nella pagina <a href="/dintorni/">dintorni</a>. Tutte le informazioni per prenotare sono nella pagina del nostro <a href="/">trullo in affitto a Martina Franca</a>.</p>
 
 <h2>Domande frequenti</h2>
 """ + faq_html(VI_FAQ_IT),
@@ -128,7 +128,7 @@ VALLE = {
 <li><strong>Day 3:</strong> Ostuni and the Adriatic Sea.</li>
 <li><strong>Day 4:</strong> Matera, whose Sassi are UNESCO World Heritage since 1993 (about 64 km as the crow flies).</li>
 </ul>
-<p>In the evening you come back to the countryside: at <a href="/en/the-trullo/">Trullo Rosy</a> there is the silence of the olive trees and, in winter, the fireplace. More places to visit are on the <a href="/en/surroundings/">surroundings</a> page.</p>
+<p>In the evening you come back to the countryside: at <a href="/en/the-trullo/">Trullo Rosy</a> there is the silence of the olive trees and, in winter, the fireplace. More places to visit are on the <a href="/en/surroundings/">surroundings</a> page. Everything you need to book is on the page of our <a href="/en/">trullo for rent in Martina Franca</a>.</p>
 
 <h2>Frequently asked questions</h2>
 """ + faq_html(VI_FAQ_EN),
@@ -200,7 +200,7 @@ SPIAGGE = {
 <li><strong>Parti presto:</strong> in luglio e agosto i parcheggi vicino alle spiagge più note si riempiono in mattinata.</li>
 <li><strong>Scegli il mare in base al vento:</strong> quando una costa è mossa, spesso l'altra è calma.</li>
 <li><strong>Unisci mare e paese:</strong> Ostuni con la costa adriatica, Taranto con lo Ionio. Altri luoghi sono nella pagina <a href="/dintorni/">dintorni</a> e nella <a href="/guide/cosa-vedere-in-valle-ditria/">guida alla Valle d'Itria</a>.</li>
-<li><strong>La sera:</strong> in collina fa più fresco che sulla costa, e a <a href="/il-trullo/">Trullo Rosy</a> si cena sotto il pergolato.</li>
+<li><strong>La sera:</strong> in collina fa più fresco che sulla costa, e a <a href="/il-trullo/">Trullo Rosy</a> si cena sotto il pergolato. Tutte le informazioni per prenotare sono nella pagina del nostro <a href="/">trullo in affitto a Martina Franca</a>.</li>
 </ul>
 
 <h2>Domande frequenti</h2>
@@ -250,7 +250,7 @@ SPIAGGE = {
 <li><strong>Leave early:</strong> in July and August the car parks near the best-known beaches fill up by mid-morning.</li>
 <li><strong>Pick the sea by the wind:</strong> when one coast is rough, the other is often calm.</li>
 <li><strong>Combine sea and town:</strong> Ostuni with the Adriatic, Taranto with the Ionian. More places are on the <a href="/en/surroundings/">surroundings</a> page and in the <a href="/en/guides/what-to-see-in-the-itria-valley/">Itria Valley guide</a>.</li>
-<li><strong>In the evening:</strong> the hills are cooler than the coast, and at <a href="/en/the-trullo/">Trullo Rosy</a> you can have dinner under the pergola.</li>
+<li><strong>In the evening:</strong> the hills are cooler than the coast, and at <a href="/en/the-trullo/">Trullo Rosy</a> you can have dinner under the pergola. Everything you need to book is on the page of our <a href="/en/">trullo for rent in Martina Franca</a>.</li>
 </ul>
 
 <h2>Frequently asked questions</h2>
@@ -318,7 +318,7 @@ DORMIRE = {
 <p>Ad Alberobello dormi in mezzo ai trulli più famosi, ma di giorno le strade sono piene di visitatori. In campagna, tra Martina Franca, Locorotondo e Cisternino, hai più spazio, un giardino e il silenzio, e in auto raggiungi tutti i paesi della valle: le distanze sono nella <a href="/guide/cosa-vedere-in-valle-ditria/">guida alla Valle d'Itria</a>.</p>
 
 <h2>Com'è Trullo Rosy?</h2>
-<p><a href="/il-trullo/">Trullo Rosy</a> è un trullo tradizionale lungo la SP70, nelle campagne di Martina Franca, tra alberi da frutto e ulivi secolari. Ha tre camere (Silent nest, Still Bloom e l'Alcova), il salotto con il camino, la cucina e, fuori, un cortile in pietra con il pozzo, il pergolato con il tavolo da pranzo, la veranda e l'amaca tra gli ulivi. Le foto sono nella <a href="/galleria/">galleria</a>.</p>
+<p><a href="/il-trullo/">Trullo Rosy</a> è un trullo tradizionale lungo la SP70, nelle campagne di Martina Franca, tra alberi da frutto e ulivi secolari. Ha tre camere (Silent nest, Still Bloom e l'Alcova), il salotto con il camino, la cucina e, fuori, un cortile in pietra con il pozzo, il pergolato con il tavolo da pranzo, la veranda e l'amaca tra gli ulivi. Le foto sono nella <a href="/galleria/">galleria</a>. Tutte le informazioni per prenotare sono nella pagina del nostro <a href="/">trullo in affitto a Martina Franca</a>.</p>
 {{img:salotto-camino|Il salotto con il camino di Trullo Rosy}}
 
 <h2>Quando conviene dormire in un trullo?</h2>
@@ -364,7 +364,7 @@ DORMIRE = {
 <p>In Alberobello you sleep among the most famous trulli, but by day the streets are full of visitors. In the countryside between Martina Franca, Locorotondo and Cisternino you get more space, a garden and silence, and by car you can reach every town in the valley: distances are in the <a href="/en/guides/what-to-see-in-the-itria-valley/">Itria Valley guide</a>.</p>
 
 <h2>What is Trullo Rosy like?</h2>
-<p><a href="/en/the-trullo/">Trullo Rosy</a> is a traditional trullo on the SP70, in the countryside of Martina Franca, among fruit trees and centuries-old olive trees. It has three bedrooms (Silent nest, Still Bloom and the Alcove), a living room with a fireplace, a kitchen and, outside, a stone courtyard with a well, a pergola with a dining table, a veranda and a hammock among the olive trees. Photos are in the <a href="/en/gallery/">gallery</a>.</p>
+<p><a href="/en/the-trullo/">Trullo Rosy</a> is a traditional trullo on the SP70, in the countryside of Martina Franca, among fruit trees and centuries-old olive trees. It has three bedrooms (Silent nest, Still Bloom and the Alcove), a living room with a fireplace, a kitchen and, outside, a stone courtyard with a well, a pergola with a dining table, a veranda and a hammock among the olive trees. Photos are in the <a href="/en/gallery/">gallery</a>. Everything you need to book is on the page of our <a href="/en/">trullo for rent in Martina Franca</a>.</p>
 {{img:salotto-camino|The living room with the fireplace at Trullo Rosy}}
 
 <h2>When is the best time to sleep in a trullo?</h2>

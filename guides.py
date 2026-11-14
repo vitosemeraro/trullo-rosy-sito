@@ -61,7 +61,7 @@ GUIDES = [
 <li><strong>Quando:</strong> arriva nel tardo pomeriggio, così vedi il paese con la luce del giorno e poi con le luminarie accese.</li>
 <li><strong>Nei weekend</strong> e al ponte dell'Immacolata c'è molta gente: se puoi, scegli un giorno feriale.</li>
 <li><strong>Abbigliamento:</strong> la sera in collina fa freddo, e le strade del centro sono in pietra.</li>
-<li><strong>Dove dormire:</strong> Locorotondo confina con Martina Franca. Dormire in un trullo in campagna, come <a href="/il-trullo/">Trullo Rosy</a>, ti permette di girare i paesi della Valle d'Itria e tornare la sera nel silenzio, davanti al camino.</li>
+<li><strong>Dove dormire:</strong> Locorotondo confina con Martina Franca. Dormire in un trullo in campagna, come <a href="/il-trullo/">Trullo Rosy</a>, ti permette di girare i paesi della Valle d'Itria e tornare la sera nel silenzio, davanti al camino. Tutte le informazioni per prenotare sono nella pagina del nostro <a href="/">trullo in affitto a Martina Franca</a>.</li>
 </ul>
 {{img:locorotondo/trulli-campagna|La campagna dei trulli vista dalla villa comunale di Locorotondo}}
 
@@ -121,7 +121,7 @@ GUIDES = [
 <li><strong>When:</strong> arrive in the late afternoon to see the town in daylight and then with the lights on.</li>
 <li><strong>Weekends</strong> and the 8 December holiday are busy: pick a weekday if you can.</li>
 <li><strong>What to wear:</strong> evenings on the hills are cold and the old town streets are stone.</li>
-<li><strong>Where to stay:</strong> Locorotondo borders Martina Franca. Staying in a countryside trullo such as <a href="/en/the-trullo/">Trullo Rosy</a> lets you explore the Itria Valley towns and come back to silence and a fireplace in the evening.</li>
+<li><strong>Where to stay:</strong> Locorotondo borders Martina Franca. Staying in a countryside trullo such as <a href="/en/the-trullo/">Trullo Rosy</a> lets you explore the Itria Valley towns and come back to silence and a fireplace in the evening. Everything you need to book is on the page of our <a href="/en/">trullo for rent in Martina Franca</a>.</li>
 </ul>
 {{img:locorotondo/trulli-campagna|Trulli countryside seen from Locorotondo's public garden}}
 
@@ -429,7 +429,7 @@ GUIDES = [
 <li><strong>Quando:</strong> il ponte dell'Immacolata (8 dicembre) e i giorni tra Natale e l'Epifania sono i momenti in cui è aperto quasi tutto. I weekend sono affollati: se puoi, scegli un giorno feriale.</li>
 <li><strong>Un giro possibile:</strong> mattina a Martina Franca, pomeriggio ad Alberobello, sera a Locorotondo con le luci accese.</li>
 <li><strong>Abbigliamento:</strong> la sera in collina fa freddo e le strade dei centri storici sono in pietra.</li>
-<li><strong>Dove dormire:</strong> un trullo in campagna come <a href="/il-trullo/">Trullo Rosy</a>, tra Martina Franca e Locorotondo, è comodo per tutti i paesi della valle. Altri luoghi da vedere sono nella pagina <a href="/dintorni/">Dintorni</a>.</li>
+<li><strong>Dove dormire:</strong> un trullo in campagna come <a href="/il-trullo/">Trullo Rosy</a>, tra Martina Franca e Locorotondo, è comodo per tutti i paesi della valle. Altri luoghi da vedere sono nella pagina <a href="/dintorni/">Dintorni</a>. Tutte le informazioni per prenotare sono nella pagina del nostro <a href="/">trullo in affitto a Martina Franca</a>.</li>
 </ul>
 
 <h2>Domande frequenti</h2>
@@ -489,7 +489,7 @@ GUIDES = [
 <li><strong>When:</strong> the 8 December holiday weekend and the days between Christmas and Epiphany are when almost everything is open. Weekends are busy: pick a weekday if you can.</li>
 <li><strong>A possible route:</strong> morning in Martina Franca, afternoon in Alberobello, evening in Locorotondo with the lights on.</li>
 <li><strong>What to wear:</strong> evenings on the hills are cold and old town streets are stone.</li>
-<li><strong>Where to stay:</strong> a countryside trullo such as <a href="/en/the-trullo/">Trullo Rosy</a>, between Martina Franca and Locorotondo, is handy for every town in the valley. More places to visit are on our <a href="/en/surroundings/">Surroundings</a> page.</li>
+<li><strong>Where to stay:</strong> a countryside trullo such as <a href="/en/the-trullo/">Trullo Rosy</a>, between Martina Franca and Locorotondo, is handy for every town in the valley. More places to visit are on our <a href="/en/surroundings/">Surroundings</a> page. Everything you need to book is on the page of our <a href="/en/">trullo for rent in Martina Franca</a>.</li>
 </ul>
 
 <h2>Frequently asked questions</h2>
