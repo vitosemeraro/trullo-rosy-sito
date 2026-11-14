@@ -429,6 +429,7 @@ def trullo(lang):
   <h1>{e(p['h1'])}</h1>
   <p class="lead">{e(p['lead'])}</p>
 </section>
+<figure class="wide">{img('veranda', C[lang]['galleria']['captions'][GALLERY_IMAGES.index('veranda')])}</figure>
 <section class="wrap">
   <h2>{e(p['facts_h2'])}</h2>
   <table class="facts"><tbody>{facts}</tbody></table>
