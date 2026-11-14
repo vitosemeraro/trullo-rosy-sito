@@ -131,8 +131,6 @@ small{font-family:system-ui,sans-serif;font-size:.55em;color:var(--muted);font-w
 .df-err{color:#a1361b;font-weight:600;margin:.6em 0 0}
 .direct-form .note{font-size:.85rem;margin:.4em 0}
 @media (max-width:600px){.direct-form{padding:1em}.df-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.df-row label:last-child{grid-column:1/-1}}
-
-/* ================= Grafica curata (14/11/2026) =================
    Caratteri ospitati sul sito (niente Google Fonts esterni, nessun cookie): Cormorant Garamond per i titoli, Jost per il testo.
    Licenza SIL Open Font License 1.1. Questo blocco ridefinisce gli stili sopra: tenerlo in fondo. */
 @font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-400-normal.woff2) format("woff2")}
@@ -269,3 +267,25 @@ main>section.final{margin-bottom:0}
  .hero:after{background:linear-gradient(180deg,rgba(20,16,10,.2) 0%,rgba(20,16,10,.35) 40%,rgba(20,16,10,.78) 100%)}
 }
 .wide{margin:0}.wide img{width:100%;height:min(78vh,760px);object-fit:cover}
+=======
+/* Calendario date libere (14/11/2026) */
+.df-cal{margin:.4em 0 .8em}
+.df-cal-h{margin:.2em 0;display:flex;flex-wrap:wrap;gap:.3em 1em;align-items:center}
+.df-leg{font-size:.85rem;color:var(--muted)}
+.df-leg i{display:inline-block;width:.85em;height:.85em;border-radius:3px;margin:0 .3em 0 .6em;vertical-align:-.1em}
+.df-leg i.free{background:#fff;border:1px solid var(--line)}.df-leg i.busy{background:#e6dfd2}
+.df-cal-hint{font-size:.85rem;color:var(--muted);margin:.2em 0 .5em}
+.df-months{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.df-mh{display:flex;justify-content:space-between;align-items:center;font-weight:600;text-transform:capitalize;margin-bottom:.3em}
+.df-nav{border:1px solid var(--line);background:#fff;border-radius:50%;width:2em;height:2em;cursor:pointer;font:inherit;color:inherit}
+.df-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:2px;text-align:center}
+.df-wd{font-size:.75rem;color:var(--muted);text-transform:uppercase}
+.df-day{border:0;border-radius:6px;padding:.45em 0;font:inherit;font-size:.88rem;cursor:pointer;background:#fff;color:var(--ink)}
+.df-day.free:hover{outline:2px solid var(--green)}
+.df-day.busy{background:#e6dfd2;color:#9a9385;text-decoration:line-through;cursor:not-allowed}
+.df-day.past{background:transparent;color:#c9c3b6;cursor:default}
+.df-day.in{background:#dfe7d6}
+.df-day.sel{background:var(--green);color:#fff}
+@media (max-width:600px){.df-months{grid-template-columns:1fr}}
+
+/* ================= Grafica curata (14/11/2026) ==========

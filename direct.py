@@ -10,6 +10,8 @@ Segnaposti nei messaggi: {ci} arrivo, {co} partenza, {n} ospiti, {nome}, {msg}.
 
 D = {
     "it": dict(
+        cal_h="Date libere", cal_free="libero", cal_busy="occupato", cal_hint="Tocca il giorno di arrivo e poi quello di partenza.",
+        busy_err="In quelle date il trullo risulta già occupato: scegli altre date nel calendario.",
         cta="Prenota direttamente",
         also="Anche su", also_note="dove trovi le recensioni degli ospiti",
         form_h2="Prenota direttamente con noi",
@@ -26,6 +28,8 @@ D = {
         privacy="Il modulo di prenotazione non invia dati a questo sito: prepara solo un messaggio WhatsApp o un'email che decidi tu se inviare.",
     ),
     "en": dict(
+        cal_h="Available dates", cal_free="free", cal_busy="booked", cal_hint="Tap your check-in day, then your check-out day.",
+        busy_err="The trullo is already booked on some of those nights: please pick other dates in the calendar.",
         cta="Book direct",
         also="Also on", also_note="where you can read our guests' reviews",
         form_h2="Book directly with us",
@@ -42,6 +46,8 @@ D = {
         privacy="The booking form sends no data to this site: it only prepares a WhatsApp message or an email that you choose whether to send.",
     ),
     "fr": dict(
+        cal_h="Dates disponibles", cal_free="libre", cal_busy="occupé", cal_hint="Touchez le jour d'arrivée, puis celui du départ.",
+        busy_err="Le trullo est déjà occupé à ces dates : choisissez d'autres dates dans le calendrier.",
         cta="Réserver en direct",
         also="Aussi sur", also_note="où vous trouverez les avis de nos hôtes",
         form_h2="Réservez directement avec nous",
@@ -58,6 +64,8 @@ D = {
         privacy="Le formulaire de réservation n'envoie aucune donnée à ce site : il prépare seulement un message WhatsApp ou un e-mail que vous choisissez d'envoyer.",
     ),
     "de": dict(
+        cal_h="Freie Termine", cal_free="frei", cal_busy="belegt", cal_hint="Tippe auf den Anreisetag und dann auf den Abreisetag.",
+        busy_err="Der Trullo ist an diesen Daten schon belegt: Bitte wähle andere Daten im Kalender.",
         cta="Direkt buchen",
         also="Auch auf", also_note="dort findest du die Bewertungen unserer Gäste",
         form_h2="Direkt bei uns buchen",
@@ -74,6 +82,8 @@ D = {
         privacy="Das Buchungsformular sendet keine Daten an diese Website: es bereitet nur eine WhatsApp-Nachricht oder E-Mail vor, die du selbst abschickst.",
     ),
     "nl": dict(
+        cal_h="Vrije data", cal_free="vrij", cal_busy="bezet", cal_hint="Tik op je aankomstdag en daarna op je vertrekdag.",
+        busy_err="De trullo is op die data al bezet: kies andere data in de kalender.",
         cta="Direct boeken",
         also="Ook op", also_note="waar je de reviews van onze gasten leest",
         form_h2="Boek direct bij ons",
@@ -90,6 +100,8 @@ D = {
         privacy="Het boekingsformulier stuurt geen gegevens naar deze site: het maakt alleen een WhatsApp-bericht of e-mail klaar die je zelf verstuurt.",
     ),
     "es": dict(
+        cal_h="Fechas libres", cal_free="libre", cal_busy="ocupado", cal_hint="Toca el día de llegada y luego el de salida.",
+        busy_err="El trullo ya está ocupado en esas fechas: elige otras fechas en el calendario.",
         cta="Reserva directa",
         also="También en", also_note="donde puedes leer las opiniones de nuestros huéspedes",
         form_h2="Reserva directamente con nosotros",
