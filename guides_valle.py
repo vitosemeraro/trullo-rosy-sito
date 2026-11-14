@@ -62,7 +62,7 @@ VALLE = {
 {{img:luoghi/alberobello|I trulli del rione Monti ad Alberobello}}
 
 <h2>Locorotondo e Cisternino: cosa hanno di speciale?</h2>
-<p><strong>Locorotondo</strong> deve il nome alla forma del centro storico, un cerchio di case bianche con i tetti a punta (le "cummerse"). Dalla villa comunale si vede tutta la campagna dei trulli. A Natale il paese si riempie di luminarie: ne parliamo nella <a href="/guide/natale-a-locorotondo/">guida al Natale a Locorotondo</a>.</p>
+<p><strong>Locorotondo</strong> deve il nome alla forma del centro storico, un cerchio di case bianche con i tetti a punta (le "cummerse"). Dalla villa comunale si vede tutta la campagna dei trulli. Cosa vedere nel centro è nella guida <a href="/guide/cosa-vedere-a-locorotondo/">cosa vedere a Locorotondo</a>; a Natale il paese si riempie di luminarie: ne parliamo nella <a href="/guide/natale-a-locorotondo/">guida al Natale a Locorotondo</a>.</p>
 <p><strong>Cisternino</strong> è il paese delle bombette: involtini di carne cotti nei "fornelli pronti", macellerie dove scegli la carne e te la cuociono sul momento. Il centro storico è un intreccio di scale e vicoli imbiancati.</p>
 
 <h2>Vale la pena arrivare fino a Ostuni?</h2>
@@ -114,7 +114,7 @@ VALLE = {
 {{img:luoghi/alberobello|The trulli of Rione Monti in Alberobello}}
 
 <h2>Locorotondo and Cisternino: what makes them special?</h2>
-<p><strong>Locorotondo</strong> takes its name from the round shape of its old town, a circle of white houses with pointed roofs (the "cummerse"). From the public garden you can see the whole trulli countryside. At Christmas the town fills with lights: see our <a href="/en/guides/christmas-in-locorotondo/">guide to Christmas in Locorotondo</a>.</p>
+<p><strong>Locorotondo</strong> takes its name from the round shape of its old town, a circle of white houses with pointed roofs (the "cummerse"). From the public garden you can see the whole trulli countryside. What to see in the old town is in our guide <a href="/en/guides/what-to-see-in-locorotondo/">what to see in Locorotondo</a>; at Christmas the town fills with lights: see our <a href="/en/guides/christmas-in-locorotondo/">guide to Christmas in Locorotondo</a>.</p>
 <p><strong>Cisternino</strong> is the town of bombette: small meat rolls cooked in the "fornelli pronti", butcher's shops where you pick the meat and they grill it for you on the spot. The old town is a tangle of whitewashed steps and lanes.</p>
 
 <h2>Is Ostuni worth the trip?</h2>
@@ -380,4 +380,148 @@ DORMIRE = {
     ),
 }
 
-GUIDES = [VALLE, SPIAGGE, DORMIRE]
+
+# ---------------------------------------------------------------- Cosa vedere a Locorotondo (14/11/2026)
+WIKI_LOCO_IT = ("Wikipedia, \"Locorotondo\" (voce in italiano: chiese, Via Nardelli, feste patronali)", "https://it.wikipedia.org/wiki/Locorotondo")
+ITALIA_LOCO = ("italia.it (ENIT), \"Locorotondo\"", "https://www.italia.it/it/puglia/bari/locorotondo")
+WIKI_LOCO_EN = ("Wikipedia, \"Locorotondo\" (voce in inglese: Locorotondo DOC, Borghi più belli d'Italia, Bandiera Arancione)", "https://en.wikipedia.org/wiki/Locorotondo")
+
+LO_FAQ_IT = [
+    ("Quanto tempo serve per visitare Locorotondo?", "Per il centro storico bastano due o tre ore a piedi: è piccolo e circolare. Con una sosta al belvedere al tramonto e una cena, mezza giornata è il tempo giusto."),
+    ("Perché si chiama Locorotondo?", "Per la forma del centro storico: le case bianche sono disposte ad anelli intorno al punto più alto della collina. Il nome attuale è in uso dal 1834; prima il paese si chiamava Casale Rotondo e poi Luogorotondo."),
+    ("Cosa sono le cummerse?", "Sono le case del centro storico con il tetto spiovente e appuntito, fatto di lastre di pietra calcarea. Sono la cosa che rende Locorotondo diverso dagli altri paesi della Valle d'Itria."),
+    ("Quanto dista Locorotondo da Trullo Rosy?", "Circa 12 km in linea d'aria: il trullo è nella campagna di Martina Franca, e in auto la strada è un po' più lunga."),
+    ("Quando ci sono le feste a Locorotondo?", "Le feste principali sono San Giorgio (dal 21 al 24 aprile) e San Rocco, il patrono, a metà agosto, con la fiera del 14 agosto e i fuochi d'artificio. A Natale il centro si riempie di luminarie."),
+]
+LO_FAQ_EN = [
+    ("How long do you need to visit Locorotondo?", "Two or three hours on foot are enough for the old town: it is small and round. With a stop at the viewpoint at sunset and dinner, half a day is about right."),
+    ("Why is it called Locorotondo?", "Because of the shape of its old town: the white houses are laid out in rings around the top of the hill. The current name has been in use since 1834; before that the town was called Casale Rotondo and then Luogorotondo."),
+    ("What are cummerse?", "They are the old-town houses with steep, pointed roofs made of limestone slabs. They are what makes Locorotondo look different from the other towns in the Itria Valley."),
+    ("How far is Locorotondo from Trullo Rosy?", "About 12 km as the crow flies: the trullo is in the countryside of Martina Franca, and by car the road is a little longer."),
+    ("When are the festivals in Locorotondo?", "The main ones are Saint George (21 to 24 April) and Saint Roch, the patron saint, in mid-August, with the fair on 14 August and fireworks. At Christmas the old town fills with lights."),
+]
+
+LOCOROTONDO = {
+    "key": "cosa-vedere-locorotondo",
+    "date": "2026-11-14",
+    "modified": "2026-11-14",
+    "hero": "locorotondo/panorama",
+    "paths": {"it": "/guide/cosa-vedere-a-locorotondo/", "en": "/en/guides/what-to-see-in-locorotondo/"},
+    "sources": [WIKI_LOCO_IT, ITALIA_LOCO, WIKI_LOCO_EN],
+    "it": dict(
+        title="Cosa vedere a Locorotondo: centro storico e belvedere",
+        desc="Cosa vedere a Locorotondo: il centro storico circolare, le cummerse, la Chiesa Madre, il belvedere sulla Valle d'Itria, il vino e le feste dell'anno.",
+        h1="Cosa vedere a Locorotondo, il paese rotondo della Valle d'Itria",
+        answer="A Locorotondo si viene per il centro storico: un cerchio di case bianche con i tetti a punta, le cummerse, sulla cima di una collina a 410 metri. Si gira a piedi in due o tre ore: la Chiesa Madre di San Giorgio, Santa Maria della Greca e via Nardelli, il belvedere sulla Valle d'Itria, da vedere al tramonto.",
+        body="""
+<h2>Cosa c'è da vedere a Locorotondo?</h2>
+<p>Il paese è piccolo e il centro storico si gira tutto a piedi. Queste sono le tappe principali, in un giro ad anello che parte e finisce alla villa comunale.</p>
+<table class="facts">
+<thead><tr><th scope="col">Cosa</th><th scope="col">Perché vederlo</th><th scope="col">Tempo</th></tr></thead>
+<tbody>
+<tr><th scope="row">Centro storico e cummerse</th><td>case bianche disposte ad anelli, tetti spioventi in pietra</td><td>1 ora</td></tr>
+<tr><th scope="row">Chiesa Madre di San Giorgio Martire</th><td>la chiesa principale, con la facciata neoclassica e la cupola</td><td>20 minuti</td></tr>
+<tr><th scope="row">Santa Maria della Greca</th><td>la chiesa più antica del centro, documentata dal 1520</td><td>15 minuti</td></tr>
+<tr><th scope="row">Via Nardelli, il "Lungomare"</th><td>il belvedere sulla campagna dei trulli, il più bello al tramonto</td><td>30 minuti</td></tr>
+<tr><th scope="row">Villa comunale</th><td>il giardino pubblico all'ingresso del centro, con la vista sulla valle</td><td>15 minuti</td></tr>
+</tbody>
+</table>
+{{img:locorotondo/vicolo-sera|Un vicolo bianco del centro storico di Locorotondo}}
+
+<h2>Perché Locorotondo è rotondo?</h2>
+<p>Il nome viene dalla forma del centro storico: le case bianche sono disposte ad anelli concentrici intorno al punto più alto della collina. Il paese è nato intorno all'anno Mille; prima si chiamava Casale San Giorgio, poi Casale Rotondo e Luogorotondo, e il nome Locorotondo è in uso dal 1834.</p>
+<p>Le case hanno quasi tutte il tetto spiovente e appuntito, fatto di lastre di pietra calcarea: sono le <strong>cummerse</strong>, che danno al paese un'aria quasi nordica. Locorotondo fa parte dei Borghi più belli d'Italia e ha la Bandiera Arancione del Touring Club.</p>
+{{img:locorotondo/via-morelli|Via Morelli, nel centro storico di Locorotondo}}
+
+<h2>Quali chiese visitare nel centro storico?</h2>
+<p>La <strong>Chiesa Madre di San Giorgio Martire</strong> è la più grande: fu costruita tra la fine del Settecento e l'inizio dell'Ottocento sui resti di una chiesa più antica, ha la facciata neoclassica e, all'interno, bassorilievi in pietra del Trecento.</p>
+<p><strong>Santa Maria della Greca</strong> è la chiesa più antica del centro: la prima notizia è del 1520, ma l'origine è probabilmente precedente. Fuori è semplice, con un rosone sulla facciata; dentro è sobria e raccolta. Lungo il giro si incontrano anche la chiesa di San Rocco (1710), dedicata al patrono, e la piccola chiesa di San Nicola (1582).</p>
+{{img:locorotondo/san-giorgio|L'interno della Chiesa Madre di San Giorgio a Locorotondo}}
+
+<h2>Dov'è il belvedere di Locorotondo?</h2>
+<p>È <strong>via Nardelli</strong>, che tutti chiamano "Lungomare" anche se il mare non c'è: la strada corre sul bordo del centro storico e si affaccia sulla Valle d'Itria, tra vigneti, muretti a secco e trulli. È il punto più bello al tramonto. Un'altra vista sulla campagna si ha dalla villa comunale, all'ingresso del paese.</p>
+{{img:locorotondo/trulli-campagna|La campagna dei trulli vista dalla villa comunale di Locorotondo}}
+
+<h2>Cosa assaggiare e bere a Locorotondo?</h2>
+<p>Locorotondo dà il nome a un vino bianco, il <strong>Locorotondo DOC</strong>, fermo o spumante, fatto soprattutto con uve verdeca e bianco d'Alessano coltivate nelle campagne intorno al paese. In tavola si trovano piatti della tradizione come le orecchiette al sugo di carne, il galletto al forno e il calzone di carne e cipolla.</p>
+
+<h2>Quando andare a Locorotondo?</h2>
+<ul>
+<li><strong>In primavera e in autunno</strong> il paese è tranquillo e si cammina bene.</li>
+<li><strong>Ad aprile</strong> c'è la festa di San Giorgio (dal 21 al 24 aprile), con la cerimonia del dono delle chiavi al santo.</li>
+<li><strong>A metà agosto</strong> c'è la festa del patrono San Rocco, con la fiera del 14 agosto e la gara di fuochi d'artificio la notte del 16.</li>
+<li><strong>A Natale</strong> il centro si riempie di luminarie: date e percorso sono nella guida al <a href="/guide/natale-a-locorotondo/">Natale a Locorotondo</a>.</li>
+</ul>
+{{img:locorotondo/notte|Locorotondo di notte}}
+
+<h2>Come arrivare da Trullo Rosy e cosa vedere nei dintorni?</h2>
+<p>Da <a href="/il-trullo/">Trullo Rosy</a>, nella campagna di Martina Franca, Locorotondo è a circa 12 km in linea d'aria; in auto la strada è un po' più lunga. Da Locorotondo Martina Franca è a circa 6 km, Cisternino e Alberobello a circa 8: si possono unire nella stessa giornata. Le distanze di tutti i paesi sono nella <a href="/guide/cosa-vedere-in-valle-ditria/">guida alla Valle d'Itria</a>, e altri luoghi sono nella pagina <a href="/dintorni/">dintorni</a>. Tutte le informazioni per prenotare sono nella pagina del nostro <a href="/">trullo in affitto a Martina Franca</a>.</p>
+
+<h2>Domande frequenti</h2>
+""" + faq_html(LO_FAQ_IT),
+        faq=LO_FAQ_IT,
+        cta_h2="Dormi in un trullo a pochi chilometri da Locorotondo",
+        sources_h2="Fonti",
+        photos_h2="Foto",
+        updated="Aggiornato il 14 novembre 2026",
+    ),
+    "en": dict(
+        title="What to see in Locorotondo: old town and viewpoint",
+        desc="What to see in Locorotondo, Puglia: the round old town, the cummerse roofs, the Mother Church, the Itria Valley viewpoint, local wine and festivals.",
+        h1="What to see in Locorotondo, the round town of the Itria Valley",
+        answer="People come to Locorotondo for its old town: a circle of white houses with pointed roofs, the cummerse, on top of a hill at 410 metres. You can see it on foot in two or three hours: the Mother Church of Saint George, Santa Maria della Greca and Via Nardelli, the viewpoint over the Itria Valley, best at sunset.",
+        body="""
+<h2>What is there to see in Locorotondo?</h2>
+<p>The town is small and the whole old town can be seen on foot. These are the main stops, on a loop that starts and ends at the public garden.</p>
+<table class="facts">
+<thead><tr><th scope="col">What</th><th scope="col">Why see it</th><th scope="col">Time</th></tr></thead>
+<tbody>
+<tr><th scope="row">Old town and cummerse</th><td>white houses laid out in rings, steep stone roofs</td><td>1 hour</td></tr>
+<tr><th scope="row">Mother Church of Saint George the Martyr</th><td>the main church, with its neoclassical facade and dome</td><td>20 minutes</td></tr>
+<tr><th scope="row">Santa Maria della Greca</th><td>the oldest church in the old town, recorded since 1520</td><td>15 minutes</td></tr>
+<tr><th scope="row">Via Nardelli, the "Lungomare"</th><td>the viewpoint over trulli country, best at sunset</td><td>30 minutes</td></tr>
+<tr><th scope="row">Public garden (Villa comunale)</th><td>the garden at the entrance to the old town, with a view of the valley</td><td>15 minutes</td></tr>
+</tbody>
+</table>
+{{img:locorotondo/vicolo-sera|A white lane in Locorotondo's old town}}
+
+<h2>Why is Locorotondo round?</h2>
+<p>The name comes from the shape of the old town: the white houses are laid out in concentric rings around the top of the hill. The town was founded around the year 1000; it was first called Casale San Giorgio, then Casale Rotondo and Luogorotondo, and the name Locorotondo has been in use since 1834.</p>
+<p>Almost all the houses have steep, pointed roofs made of limestone slabs: these are the <strong>cummerse</strong>, which give the town an almost northern European look. Locorotondo is one of the "Borghi più belli d'Italia" (most beautiful villages in Italy) and holds the Touring Club's Orange Flag.</p>
+{{img:locorotondo/via-morelli|Via Morelli in Locorotondo's old town}}
+
+<h2>Which churches should you visit in the old town?</h2>
+<p>The <strong>Mother Church of Saint George the Martyr</strong> is the largest: it was built between the late 18th and early 19th century on the remains of an older church, has a neoclassical facade and, inside, 14th-century stone bas-reliefs.</p>
+<p><strong>Santa Maria della Greca</strong> is the oldest church in the old town: it is first recorded in 1520, but is probably older. It is plain outside, with a rose window on the facade, and simple inside. Along the way you also pass the church of San Rocco (1710), dedicated to the patron saint, and the small church of San Nicola (1582).</p>
+{{img:locorotondo/san-giorgio|Inside the Mother Church of Saint George in Locorotondo}}
+
+<h2>Where is the Locorotondo viewpoint?</h2>
+<p>It is <strong>Via Nardelli</strong>, which everyone calls the "Lungomare" (seafront) even though there is no sea: the street runs along the edge of the old town and looks out over the Itria Valley, with vineyards, dry-stone walls and trulli. It is at its best at sunset. The public garden at the entrance to the town also has a view of the countryside.</p>
+{{img:locorotondo/trulli-campagna|Trulli countryside seen from Locorotondo's public garden}}
+
+<h2>What to eat and drink in Locorotondo?</h2>
+<p>Locorotondo gives its name to a white wine, <strong>Locorotondo DOC</strong>, still or sparkling, made mainly from Verdeca and Bianco d'Alessano grapes grown in the countryside around the town. Traditional dishes include orecchiette with meat sauce, roast cockerel and calzone filled with meat and onion.</p>
+
+<h2>When to go to Locorotondo?</h2>
+<ul>
+<li><strong>In spring and autumn</strong> the town is quiet and good for walking.</li>
+<li><strong>In April</strong> there is the feast of Saint George (21 to 24 April), with the ceremony in which the town's keys are given to the saint.</li>
+<li><strong>In mid-August</strong> there is the feast of the patron Saint Roch, with the fair on 14 August and a fireworks contest on the night of the 16th.</li>
+<li><strong>At Christmas</strong> the old town fills with lights: dates and route are in our guide to <a href="/en/guides/christmas-in-locorotondo/">Christmas in Locorotondo</a>.</li>
+</ul>
+{{img:locorotondo/notte|Locorotondo at night}}
+
+<h2>How to get there from Trullo Rosy and what is nearby?</h2>
+<p>From <a href="/en/the-trullo/">Trullo Rosy</a>, in the countryside of Martina Franca, Locorotondo is about 12 km as the crow flies; by car the road is a little longer. From Locorotondo, Martina Franca is about 6 km away and Cisternino and Alberobello about 8, so you can combine them in one day. Distances to every town are in the <a href="/en/guides/what-to-see-in-the-itria-valley/">Itria Valley guide</a>, and more places are on the <a href="/en/surroundings/">surroundings</a> page. Everything you need to book is on the page of our <a href="/en/">trullo for rent in Martina Franca</a>.</p>
+
+<h2>Frequently asked questions</h2>
+""" + faq_html(LO_FAQ_EN),
+        faq=LO_FAQ_EN,
+        cta_h2="Stay in a trullo a few kilometres from Locorotondo",
+        sources_h2="Sources",
+        photos_h2="Photos",
+        updated="Updated 14 November 2026",
+    ),
+}
+
+GUIDES = [VALLE, SPIAGGE, DORMIRE, LOCOROTONDO]

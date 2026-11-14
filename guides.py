@@ -49,7 +49,7 @@ GUIDES = [
 <h2>Dove sono le luci nel centro storico?</h2>
 <p>Nel 2025 il percorso delle luminarie partiva da <strong>piazza Aldo Moro</strong> e attraversava <strong>via Porta Nuova, via Morelli, via Montanaro, via Bruno e via Eroi Dogali</strong>, con le luci accese ogni sera dalle 17 circa. Il percorso del 2026 non è ancora stato annunciato.</p>
 {{img:locorotondo/via-morelli|Via Morelli, nel centro storico di Locorotondo}}
-<p>Lungo la strada vale una sosta la <strong>Chiesa Madre di San Giorgio Martire</strong>, con la sua grande cupola, e il belvedere della villa comunale, che guarda sulla campagna dei trulli.</p>
+<p>Lungo la strada vale una sosta la <strong>Chiesa Madre di San Giorgio Martire</strong>, con la sua grande cupola, e il belvedere della villa comunale, che guarda sulla campagna dei trulli. Tutte le tappe del centro storico sono nella guida <a href="/guide/cosa-vedere-a-locorotondo/">cosa vedere a Locorotondo</a>.</p>
 {{img:locorotondo/san-giorgio|L'interno della Chiesa Madre di San Giorgio a Locorotondo}}
 
 <h2>Quando ci sono i mercatini di Natale a Locorotondo nel 2026?</h2>
@@ -110,7 +110,7 @@ GUIDES = [
 <h2>Where are the lights in the old town?</h2>
 <p>In 2025 the lights started from <strong>Piazza Aldo Moro</strong> and ran along <strong>Via Porta Nuova, Via Morelli, Via Montanaro, Via Bruno and Via Eroi Dogali</strong>, lit every evening from about 5 pm. The 2026 route has not been announced yet.</p>
 {{img:locorotondo/via-morelli|Via Morelli in Locorotondo's old town}}
-<p>Along the way, stop at the <strong>Mother Church of Saint George the Martyr</strong> with its large dome, and at the viewpoint of the public garden (Villa comunale), which looks out over trulli country.</p>
+<p>Along the way, stop at the <strong>Mother Church of Saint George the Martyr</strong> with its large dome, and at the viewpoint of the public garden (Villa comunale), which looks out over trulli country. All the stops in the old town are in our guide <a href="/en/guides/what-to-see-in-locorotondo/">what to see in Locorotondo</a>.</p>
 {{img:locorotondo/san-giorgio|Inside the Mother Church of Saint George in Locorotondo}}
 
 <h2>Are there Christmas markets?</h2>
