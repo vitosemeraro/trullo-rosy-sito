@@ -22,7 +22,8 @@ jobs:
       - run: python build.py && python check_links.py
       - name: Secret mancante
         if: env.HAS_FIREBASE != 'true'
-        run: echo "::warning::Manca FIREBASE_SERVICE_ACCOUNT_TRULLO_ROSY: sito generato ma non pubblicato su Firebase."
+        run: |
+          echo "::warning::Manca FIREBASE_SERVICE_ACCOUNT_TRULLO_ROSY, sito generato ma non pubblicato su Firebase."
       - uses: FirebaseExtended/action-hosting-deploy@v0
         if: env.HAS_FIREBASE == 'true'
         with:
