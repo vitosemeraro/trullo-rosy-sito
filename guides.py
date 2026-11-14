@@ -8,7 +8,7 @@ GUIDES = [
     {
         "key": "natale-locorotondo",
         "date": "2026-11-10",
-        "modified": "2026-11-13",
+        "modified": "2026-11-14",
         "hero": "locorotondo/tramonto",
         "paths": {"it": "/guide/natale-a-locorotondo/", "en": "/en/guides/christmas-in-locorotondo/",
                   "fr": "/fr/guides/noel-a-locorotondo/", "de": "/de/reisetipps/weihnachten-in-locorotondo/",
@@ -31,7 +31,7 @@ GUIDES = [
             body="""
 <h2>Quando si accendono le luminarie di Locorotondo nel 2026?</h2>
 <p>Il Comune di Locorotondo, con l'avviso pubblicato il 7 settembre 2026, ha previsto le iniziative di Natale <strong>indicativamente dal 22 novembre 2026 al 6 gennaio 2027</strong>. Il 5 novembre 2026 il Comune ha aperto la ricerca di sponsor per le <strong>"Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio"</strong> (domande fino al 16 novembre): il tema dell'edizione 2026 è quindi Pinocchio. Ad oggi (13 novembre 2026) la data esatta dell'accensione, gli orari e il percorso non sono ancora stati annunciati.</p>
-<p>Negli ultimi anni le luci si sono accese nella seconda metà di novembre e sono rimaste fino ai primi giorni di gennaio.</p>
+<p>Negli ultimi anni le luci si sono accese nella seconda metà di novembre e sono rimaste fino ai primi giorni di gennaio. Cosa c'è dopo Natale, tra Capodanno, Epifania e Carnevale, è nella guida <a href="/guide/eventi-in-valle-ditria/">eventi in Valle d'Itria nell'inverno 2026-27</a>.</p>
 <table class="facts">
 <thead><tr><th scope="col">Anno</th><th scope="col">Accensione</th><th scope="col">Fino a</th></tr></thead>
 <tbody>
@@ -92,7 +92,7 @@ GUIDES = [
             body="""
 <h2>When do the Locorotondo Christmas lights go on in 2026?</h2>
 <p>In its notice of 7 September 2026, the Comune di Locorotondo planned the Christmas programme <strong>from about 22 November 2026 to 6 January 2027</strong>. On 5 November 2026 the Comune opened a call for sponsors of <strong>"Luci di Natale a Locorotondo 2026 – Le avventure di Pinocchio"</strong> (applications until 16 November), so this year's theme is Pinocchio. As of 13 November 2026 the exact switch-on date, times and route have not been announced yet.</p>
-<p>In recent years the lights have gone on in the second half of November and stayed until early January.</p>
+<p>In recent years the lights have gone on in the second half of November and stayed until early January. What comes after Christmas, from New Year to Epiphany and Carnival, is in our guide <a href="/en/guides/itria-valley-events/">Itria Valley events in winter 2026-27</a>.</p>
 <table class="facts">
 <thead><tr><th scope="col">Year</th><th scope="col">Switch-on</th><th scope="col">Until</th></tr></thead>
 <tbody>
