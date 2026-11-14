@@ -10,3 +10,10 @@ Sito statico di Trullo Rosy (Martina Franca, Valle d'Itria) in 6 lingue: it, en,
 Prova in locale: `pip install pillow && python build.py && python check_links.py`.
 
 Ogni push su `main` pubblica il sito con il workflow in `.github/workflows/`.
+
+## Contatore anonimo dei clic
+
+`worker/ev.js` è il Cloudflare Worker `trullo-ev` (https://trullo-ev.cfdist2.workers.dev) con il database D1 `trullo-events`.
+`static/assets/site.js` gli manda ogni clic su Airbnb, Booking.com, WhatsApp, telefono ed email, anche senza consenso ai cookie:
+non usa cookie e salva solo minuto, evento, pagina e lingua. I conteggi si leggono da https://trullo-ev.cfdist2.workers.dev/ev-stats?days=35
+oppure con una query D1 dall'API Cloudflare. Se cambi `worker/ev.js`, ricaricalo su Cloudflare (non c'è deploy automatico del worker).

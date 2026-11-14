@@ -40,7 +40,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "4"
+ASSET_VER = "5"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
