@@ -17,6 +17,7 @@ from guides import GUIDES
 from guides_valle import GUIDES as GUIDES_VALLE
 from guides_eventi import GUIDES as GUIDES_EVENTI
 from guides_cibo import GUIDES as GUIDES_CIBO
+import reviews as RV
 
 GUIDES = GUIDES + GUIDES_VALLE + GUIDES_EVENTI + GUIDES_CIBO
 
@@ -40,7 +41,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "5"
+ASSET_VER = "6"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -287,6 +288,27 @@ def guide_links(lang):
     return f'<ul class="guide-links">{items}</ul>' if items else ""
 
 
+def reviews_section(lang):
+    r = RV.TXT[lang]
+    scores = "".join(
+        f'<li><a href="{AIRBNB if k == "airbnb" else BOOKING}" rel="nofollow noopener" target="_blank">'
+        f'<strong>{RV.SOURCE_NAME[k]}</strong> {e(r["score"].format(s=v["score"], m=v["scale"], n=v["count"]))}</a></li>'
+        for k, v in RV.SCORES.items())
+    quotes = "".join(
+        f'<figure class="review"><blockquote lang="{ln}"><p>{e(txt)}</p></blockquote>'
+        f'<figcaption>{e(name)}{(", " + e(country)) if country else ""} · {RV.SOURCE_NAME[src]} · {e(RV.month_label(lang, ym))} · {e(vote)}</figcaption></figure>'
+        for name, country, src, ym, vote, ln, txt in RV.REVIEWS)
+    return f"""
+<section class="wrap reviews" id="recensioni">
+  <h2>{e(r['h2'])}</h2>
+  <p>{e(r['intro'])}</p>
+  <ul class="scores">{scores}</ul>
+  <div class="review-grid">{quotes}</div>
+  <p class="note">{e(r['note'])} {e(r['all'])} <a href="{AIRBNB}" rel="nofollow noopener" target="_blank">Airbnb</a> · <a href="{BOOKING}" rel="nofollow noopener" target="_blank">Booking.com</a></p>
+</section>
+"""
+
+
 def home(lang):
     t, p = C[lang], C[lang]["home"]
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in t["faq"])
@@ -335,6 +357,7 @@ def home(lang):
   <ul class="places">{places}</ul>
   <p><a class="more" href="{PATHS['dintorni'][lang]}">{e(p['more_places'])} →</a></p>
 </section>
+{reviews_section(lang)}
 <section class="wrap faq">
   <h2>{e(p['faq_h2'])}</h2>
   {faq}
@@ -616,6 +639,10 @@ def llms():
         for l, p in g["paths"].items():
             lines.append(f"- [{g[l]['h1']}]({SITE}{p})")
     lines.append("")
+    lines += ["## Recensioni / Reviews",
+              f"- Airbnb: {RV.SCORES['airbnb']['score']}/5 su {RV.SCORES['airbnb']['count']} recensioni ({AIRBNB})",
+              f"- Booking.com: {RV.SCORES['booking']['score']}/10 su {RV.SCORES['booking']['count']} recensioni ({BOOKING})",
+              f"- Dati letti il {RV.LETTE_IL}; estratti in {SITE}/#recensioni", ""]
     lines += ["## Prenotazioni / Booking", f"- Airbnb: {AIRBNB}", f"- Booking.com: {BOOKING}", f"- WhatsApp: {WHATSAPP}", ""]
     return "\n".join(lines)
 
