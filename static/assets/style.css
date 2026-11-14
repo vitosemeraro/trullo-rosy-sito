@@ -113,3 +113,21 @@ small{font-family:system-ui,sans-serif;font-size:.55em;color:var(--muted);font-w
 .review figcaption{font-size:.9em;opacity:.8;margin-top:.6em}
 .reviews .note{font-size:.9em}
 @media (max-width:720px){.review-grid{grid-template-columns:1fr}}
+
+/* Prenotazione diretta (14/11/2026) */
+.btn-direct{font-size:1.05rem}
+.also{font-size:.88rem;color:var(--muted,#5b5b5b);margin:.2em 0 1em}
+.also a{color:inherit}
+.hero .also{color:inherit;opacity:.9}
+.stay-dates .also{margin:.25em 0 0}
+.direct-form{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius,12px);padding:1.2em 1.4em;margin:1.2em 0;text-align:left}
+.final-form{max-width:720px}
+.direct-form h2{margin-top:0}
+.direct-form label{display:block;font-weight:600;font-size:.92rem;margin:.6em 0 0}
+.direct-form input,.direct-form select,.direct-form textarea{display:block;width:100%;box-sizing:border-box;margin-top:.25em;padding:.55em .7em;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff;color:inherit}
+.df-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) 110px;gap:10px}
+.direct-form input,.direct-form select{min-width:0}
+.df-row label{margin-top:0}
+.df-err{color:#a1361b;font-weight:600;margin:.6em 0 0}
+.direct-form .note{font-size:.85rem;margin:.4em 0}
+@media (max-width:600px){.direct-form{padding:1em}.df-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.df-row label:last-child{grid-column:1/-1}}

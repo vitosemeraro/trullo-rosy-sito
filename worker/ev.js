@@ -1,4 +1,4 @@
-// Trullo Rosy – contatore anonimo dei clic su Airbnb, Booking.com, WhatsApp, telefono ed email.
+// Trullo Rosy – contatore anonimo dei clic su Prenota direttamente (e invii del modulo), Airbnb, Booking.com, WhatsApp, telefono ed email.
 // Cloudflare Worker "trullo-ev" (https://trullo-ev.cfdist2.workers.dev), stesso schema di ev.php di RAM.
 // Non usa cookie e non salva IP, user agent o altri dati personali: solo minuto, evento, pagina e lingua.
 // Binding (impostato su Cloudflare, mai nel repository):
@@ -6,7 +6,7 @@
 // POST /ev        {"e":"prenota_airbnb","p":"/it/guide/…","l":"it"}  → 204
 // GET  /ev-stats  ?days=35  → {"since":"AAAA-MM-GG","rows":[{day,e,p,l,s,n,v}]}
 
-const EVENTS = ['prenota_airbnb', 'prenota_booking', 'contatto_whatsapp', 'contatto_telefono', 'contatto_email'];
+const EVENTS = ['prenota_diretto', 'richiesta_diretta', 'prenota_airbnb', 'prenota_booking', 'contatto_whatsapp', 'contatto_telefono', 'contatto_email'];
 const ORIGINS = ['https://trullo-rosy.it', 'https://www.trullo-rosy.it'];
 
 function cors(req) {

@@ -18,6 +18,7 @@ from guides_valle import GUIDES as GUIDES_VALLE
 from guides_eventi import GUIDES as GUIDES_EVENTI
 from guides_cibo import GUIDES as GUIDES_CIBO
 import reviews as RV
+from direct import D as DIRECT
 
 GUIDES = GUIDES + GUIDES_VALLE + GUIDES_EVENTI + GUIDES_CIBO
 
@@ -30,7 +31,7 @@ GA4 = "G-91MWCNVPTX"
 CF_TOKEN = "15af80a656624e5d92dbbb62ebc88759"
 PHONE_VITO, PHONE_VITO_TXT = "+393290614613", "+39 329 06 14 613"
 PHONE_ERICA, PHONE_ERICA_TXT = "+393493132669", "+39 349 31 32 669"
-EMAIL = "hello@rent-apartment-milan.com"
+EMAIL = "hello@trullo-rosy.it"
 WHATSAPP = "https://wa.me/393290614613"
 AIRBNB = "https://www.airbnb.com/rooms/2627341"
 BOOKING = "https://www.booking.com/hotel/it/trullo-rosy.it.html"
@@ -41,7 +42,7 @@ CHECKIN, CHECKOUT = "15:00", "11:00"
 OSPITI_MAX = 6
 GEO = {"lat": 40.6526405, "lng": 17.3594071}
 NAV_KEYS = ["home", "trullo", "galleria", "dintorni", "contatti"]
-ASSET_VER = "6"
+ASSET_VER = "7"
 
 # Vecchi indirizzi del sito WordPress -> pagina nuova (usati per le pagine di reindirizzamento)
 REDIRECTS = {
@@ -87,14 +88,57 @@ def img(name, alt, cls="", lazy=True):
     return f'<img src="/img/{name}.webp" alt="{e(alt)}" width="{w}" height="{h}"{load}{c}>'
 
 
-def book_buttons(t):
+def wa_link(text):
+    from urllib.parse import quote
+    return WHATSAPP + "?text=" + quote(text)
+
+
+def also_links(lang, ci=None, co=None):
+    """Airbnb e Booking.com come link secondari (14/11/2026: si spinge la prenotazione diretta)."""
+    d = DIRECT[lang]
+    qa = f"?check_in={ci}&amp;check_out={co}&amp;adults=2" if ci else ""
+    qb = f"?checkin={ci}&amp;checkout={co}&amp;group_adults=2" if ci else ""
+    return (f'<p class="also">{e(d["also"])} <a href="{AIRBNB}{qa}" rel="noopener" target="_blank">Airbnb</a> · '
+            f'<a href="{BOOKING}{qb}" rel="noopener" target="_blank">Booking.com</a>, {e(d["also_note"])}.</p>')
+
+
+def book_buttons(lang, target=None):
+    """CTA principale: "Prenota direttamente" (porta al modulo) + WhatsApp precompilato; piattaforme come link secondari."""
+    d = DIRECT[lang]
+    href = target or PATHS["contatti"][lang] + "#prenota"
     return (
         '<div class="cta">'
-        f'<a class="btn" href="{AIRBNB}" rel="noopener" target="_blank">Airbnb</a>'
-        f'<a class="btn" href="{BOOKING}" rel="noopener" target="_blank">Booking.com</a>'
-        f'<a class="btn btn-wa" href="{WHATSAPP}" rel="noopener" target="_blank">{e(t["whatsapp"])}</a>'
-        "</div>"
+        f'<a class="btn btn-direct" href="{href}" data-ev="prenota_diretto">{e(d["cta"])}</a>'
+        f'<a class="btn btn-wa" href="{wa_link(d["wa_text"])}" rel="noopener" target="_blank">{e(C[lang]["whatsapp"])}</a>'
+        "</div>" + also_links(lang)
     )
+
+
+def direct_form(lang, fid="prenota"):
+    """Modulo di prenotazione diretta: non invia nulla al sito, prepara WhatsApp o email (site.js).
+    Senza JavaScript il modulo apre comunque un'email a EMAIL."""
+    d = DIRECT[lang]
+    opts = "".join(f'<option{" selected" if i == 2 else ""}>{i}</option>' for i in range(1, OSPITI_MAX + 1))
+    data = {"tpl": d["tpl"], "sign": d["sign"], "subject": d["subject"], "err": d["err"]}
+    attrs = " ".join(f'data-{k}="{e(v)}"' for k, v in data.items())
+    return f"""<form class="direct-form" id="{fid}" action="mailto:{EMAIL}" method="post" enctype="text/plain" data-wa="{WHATSAPP}" data-email="{EMAIL}" {attrs}>
+    <h2>{e(d['form_h2'])}</h2>
+    <p>{e(d['form_p'])}</p>
+    <div class="df-row">
+      <label>{e(d['ci'])}<input type="date" name="arrivo" required></label>
+      <label>{e(d['co'])}<input type="date" name="partenza" required></label>
+      <label>{e(d['n'])}<select name="ospiti">{opts}</select></label>
+    </div>
+    <label>{e(d['nome'])}<input type="text" name="nome" autocomplete="name" maxlength="80"></label>
+    <label>{e(d['msg'])}<textarea name="messaggio" rows="3" maxlength="600"></textarea></label>
+    <p class="df-err" role="alert" hidden></p>
+    <div class="cta">
+      <button type="submit" class="btn btn-wa" name="via" value="whatsapp">{e(d['send_wa'])}</button>
+      <button type="submit" class="btn" name="via" value="email">{e(d['send_mail'])}</button>
+    </div>
+    <p class="note">{e(d['note'])}</p>
+    {also_links(lang)}
+  </form>"""
 
 
 # Box "dormi qui" delle guide (13/11/2026): foto del trullo, fatti veri, link con le date già compilate.
@@ -137,11 +181,11 @@ def stay_box(g, lang, title, cls="book-box"):
     rows = ""
     for k, ci, co in SEASON_DATES.get(g["key"], []):
         lab = s["dates"][k]
-        wa = WHATSAPP + "?text=" + quote(s["wa"].format(d="(" + lab + ")", n=4))
+        d = DIRECT[lang]
+        wa = WHATSAPP + "?text=" + quote(d["wa_dates"].format(d="(" + lab + ")", n=4))
         rows += (f'<li><strong>{e(lab)}</strong><span class="cta">'
-                 f'<a class="btn btn-small" href="{AIRBNB}?check_in={ci}&amp;check_out={co}&amp;adults=2" rel="noopener" target="_blank">Airbnb</a>'
-                 f'<a class="btn btn-small" href="{BOOKING}?checkin={ci}&amp;checkout={co}&amp;group_adults=2" rel="noopener" target="_blank">Booking.com</a>'
-                 f'<a class="btn btn-small btn-wa" href="{wa}" rel="noopener" target="_blank">WhatsApp</a></span></li>')
+                 f'<a class="btn btn-small btn-wa" href="{wa}" rel="noopener" target="_blank">{e(d["stay_direct"])} · WhatsApp</a></span>'
+                 f'{also_links(lang, ci, co)}</li>')
     dates_html = f'<ul class="stay-dates">{rows}</ul>' if rows else ""
     trullo_url = PATHS["trullo"][lang]
     return f"""<aside class="{cls} stay-box" aria-label="{e(title)}">
@@ -150,7 +194,7 @@ def stay_box(g, lang, title, cls="book-box"):
       <p class="book-box-t">{e(title)}</p>
       <p class="stay-facts">{e(s['facts'])}</p>
       {dates_html if dates_html else ''}
-      {'' if dates_html else book_buttons(C[lang])}
+      {'' if dates_html else book_buttons(lang)}
       <p class="stay-more"><a href="{trullo_url}">{e(s['see'])} →</a></p>
     </div>
   </aside>"""
@@ -207,7 +251,7 @@ def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=
     <a class="brand" href="{PATHS['home'][lang]}"><img src="/img/logo.png" alt="Trullo Rosy" width="44" height="44"><span>Trullo Rosy</span></a>
     <nav class="nav" aria-label="Menu">{nav}</nav>
     <nav class="langs" aria-label="{e(t['langs_label'])}">{langs}</nav>
-    <a class="btn btn-small" href="{PATHS['contatti'][lang]}#prenota">{e(t['book'])}</a>
+    <a class="btn btn-small" href="{PATHS['contatti'][lang]}#prenota" data-ev="prenota_diretto">{e(DIRECT[lang]['cta'])}</a>
   </div>
 </header>
 <main id="main">
@@ -223,7 +267,8 @@ def page(lang, key, title, desc, body, schemas=(), og_image="facciata", noindex=
     </div>
     <div>
       <p><a href="tel:{PHONE_VITO}">{PHONE_VITO_TXT}</a> (Vito)<br><a href="tel:{PHONE_ERICA}">{PHONE_ERICA_TXT}</a> (Erica)</p>
-      <p><a href="{WHATSAPP}" rel="noopener" target="_blank">WhatsApp</a> · <a href="{AIRBNB}" rel="noopener" target="_blank">Airbnb</a> · <a href="{BOOKING}" rel="noopener" target="_blank">Booking.com</a></p>
+      <p><a href="{PATHS['contatti'][lang]}#prenota" data-ev="prenota_diretto">{e(DIRECT[lang]['cta'])}</a> · <a href="{WHATSAPP}" rel="noopener" target="_blank">WhatsApp</a> · <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+      <p class="small">{e(DIRECT[lang]['also'])} <a href="{AIRBNB}" rel="noopener" target="_blank">Airbnb</a> · <a href="{BOOKING}" rel="noopener" target="_blank">Booking.com</a></p>
       <p><a href="{PATHS['privacy'][lang]}">{e(t['privacy'])}</a> · <a href="{PATHS['privacy'][lang]}" data-cc-open>Cookie</a></p>
     </div>
   </div>
@@ -249,6 +294,7 @@ def rental_schema(lang):
         "description": t["schema_desc"],
         "image": [f"{SITE}/img/{n}.webp" for n in ("facciata", "esterno-trulli", "camera-silent-nest", "soggiorno", "cucina")],
         "telephone": PHONE_VITO,
+        "email": EMAIL,
         "address": {"@type": "PostalAddress", "streetAddress": ADDR["street"], "postalCode": ADDR["zip"],
                     "addressLocality": ADDR["city"], "addressRegion": ADDR["prov"], "addressCountry": "IT"},
         "containsPlace": {
@@ -328,7 +374,7 @@ def home(lang):
     <p class="kicker">{e(p['kicker'])}</p>
     <h1>{e(p['h1'])}</h1>
     <p class="lead">{e(p['lead'])}</p>
-    {book_buttons(t)}
+    {book_buttons(lang, "#prenota")}
   </div>
 </section>
 <section class="wrap answer">
@@ -362,10 +408,8 @@ def home(lang):
   <h2>{e(p['faq_h2'])}</h2>
   {faq}
 </section>
-<section class="wrap final">
-  <h2>{e(p['book_h2'])}</h2>
-  <p>{e(p['book_p'])}</p>
-  {book_buttons(t)}
+<section class="wrap final final-form">
+  {direct_form(lang)}
 </section>
 """
     return page(lang, "home", p["title"], p["desc"], body, [rental_schema(lang), faq_schema(lang)])
@@ -406,7 +450,7 @@ def trullo(lang):
 </section>
 <section class="wrap final">
   <h2>{e(p['avail_h2'])}</h2>
-  {book_buttons(t)}
+  {book_buttons(lang)}
 </section>
 """
     return page(lang, "trullo", p["title"], p["desc"], body, [rental_schema(lang), breadcrumb(lang, "trullo")], og_image="camera-silent-nest")
@@ -421,7 +465,7 @@ def galleria(lang):
   <p class="lead">{e(p['lead'])}</p>
 </section>
 <section class="wrap gallery">{items}</section>
-<section class="wrap final">{book_buttons(t)}</section>
+<section class="wrap final">{book_buttons(lang)}</section>
 """
     return page(lang, "galleria", p["title"], p["desc"], body, [breadcrumb(lang, "galleria")], og_image="esterno-trulli")
 
@@ -448,7 +492,7 @@ def dintorni(lang):
 <section class="wrap places-list">{items}</section>
 <section class="wrap final">
   <h2>{e(p['final_h2'])}</h2>
-  {book_buttons(t)}
+  {book_buttons(lang)}
 </section>
 """
     return page(lang, "dintorni", p["title"], p["desc"], body, [breadcrumb(lang, "dintorni")], og_image="panorama-valle-itria")
@@ -462,11 +506,11 @@ def contatti(lang):
   <h1>{e(p['h1'])}</h1>
   <p class="lead">{e(p['lead'])}</p>
 </section>
-<section class="wrap split" id="prenota">
+<section class="wrap split">
   <div>
     <h2>{e(p['how_h2'])}</h2>
     <p>{e(p['how_p'])}</p>
-    {book_buttons(t)}
+    {direct_form(lang)}
   </div>
   <div class="contact-box">
     <h2>{e(p['write_h2'])}</h2>
@@ -492,7 +536,7 @@ def privacy(lang):
   <p>{e(p['cf'])}</p>
   <p>{e(p['ga'])} <button type="button" class="linkbtn" data-cc-open>{e(p['reset'])}</button></p>
   <h2>{e(p['book_h2'])}</h2>
-  <p>{e(p['book_p'])}</p>
+  <p>{e(DIRECT[lang]['privacy'])} {e(p['book_p'])}</p>
   <h2>{e(p['contact_h2'])}</h2>
   <p>{e(p['contact_p'])} <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 </section>
@@ -579,7 +623,7 @@ def guide(g, lang):
   <section class="final">
     <h2>{e(p['cta_h2'])}</h2>
     {stay_box(g, lang, p['cta_h2'], cls="stay-final")}
-    {book_buttons(t)}
+    {book_buttons(lang)}
   </section>
   <h2>{e(p['sources_h2'])}</h2>
   <ul class="small">{srcs}</ul>
@@ -626,7 +670,7 @@ def llms():
         "> Trullo tradizionale in affitto (intera casa) nelle campagne di Martina Franca (TA), Valle d'Itria, Puglia. "
         "85 m², 3 camere (2 letti queen size, 1 letto singolo), fino a 6 ospiti, check-in dalle 15:00 e check-out entro le 11:00, CIN IT073013C200100400, cucina attrezzata, Wi-Fi, "
         "parcheggio gratuito, giardino con uliveto, amaca e barbecue. Indirizzo: SP70, 74015 Martina Franca (TA). "
-        "Prenotazioni: Airbnb, Booking.com, WhatsApp +39 329 06 14 613.", "",
+        "Prenotazione diretta (consigliata): WhatsApp +39 329 06 14 613 o email hello@trullo-rosy.it, modulo su https://trullo-rosy.it/contatti/#prenota. Anche su Airbnb e Booking.com.", "",
     ]
     for l in LANGS:
         t = C[l]
@@ -643,7 +687,10 @@ def llms():
               f"- Airbnb: {RV.SCORES['airbnb']['score']}/5 su {RV.SCORES['airbnb']['count']} recensioni ({AIRBNB})",
               f"- Booking.com: {RV.SCORES['booking']['score']}/10 su {RV.SCORES['booking']['count']} recensioni ({BOOKING})",
               f"- Dati letti il {RV.LETTE_IL}; estratti in {SITE}/#recensioni", ""]
-    lines += ["## Prenotazioni / Booking", f"- Airbnb: {AIRBNB}", f"- Booking.com: {BOOKING}", f"- WhatsApp: {WHATSAPP}", ""]
+    lines += ["## Prenotazioni / Booking",
+              f"- Prenotazione diretta / Book direct: {SITE}{PATHS['contatti']['it']}#prenota · {SITE}{PATHS['contatti']['en']}#prenota",
+              f"- WhatsApp: {WHATSAPP}", f"- Email: {EMAIL}",
+              f"- Airbnb: {AIRBNB}", f"- Booking.com: {BOOKING}", ""]
     return "\n".join(lines)
 
 
